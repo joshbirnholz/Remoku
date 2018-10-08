@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54AF33B4216AF0B30039A548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF33B3216AF0B30039A548 /* AppDelegate.swift */; };
+		54AF33B6216AF0B30039A548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF33B5216AF0B30039A548 /* ViewController.swift */; };
+		54AF33B9216AF0B30039A548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AF33B7216AF0B30039A548 /* Main.storyboard */; };
+		54AF33BB216AF0B40039A548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AF33BA216AF0B40039A548 /* Assets.xcassets */; };
+		54AF33BE216AF0B40039A548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AF33BC216AF0B40039A548 /* LaunchScreen.storyboard */; };
+		54AF33C3216AF0B40039A548 /* Roku Remote WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 54AF33C2216AF0B40039A548 /* Roku Remote WatchKit App.app */; };
+		54AF33C9216AF0B40039A548 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AF33C7216AF0B40039A548 /* Interface.storyboard */; };
+		54AF33CB216AF0B50039A548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AF33CA216AF0B50039A548 /* Assets.xcassets */; };
+		54AF33D2216AF0B50039A548 /* Roku Remote WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 54AF33D1216AF0B50039A548 /* Roku Remote WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		54AF33D7216AF0B50039A548 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF33D6216AF0B50039A548 /* InterfaceController.swift */; };
+		54AF33D9216AF0B50039A548 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF33D8216AF0B50039A548 /* ExtensionDelegate.swift */; };
+		54AF33DB216AF0B50039A548 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF33DA216AF0B50039A548 /* ComplicationController.swift */; };
+		54AF33DD216AF0B60039A548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AF33DC216AF0B60039A548 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54AF33C4216AF0B40039A548 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54AF33A8216AF0B30039A548 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54AF33C1216AF0B40039A548;
+			remoteInfo = "Roku Remote WatchKit App";
+		};
+		54AF33D3216AF0B50039A548 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54AF33A8216AF0B30039A548 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54AF33D0216AF0B50039A548;
+			remoteInfo = "Roku Remote WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54AF33E4216AF0B60039A548 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				54AF33D2216AF0B50039A548 /* Roku Remote WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AF33E8216AF0B60039A548 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				54AF33C3216AF0B40039A548 /* Roku Remote WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		54AF33B0216AF0B30039A548 /* Roku Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roku Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54AF33B3216AF0B30039A548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54AF33B5216AF0B30039A548 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54AF33B8216AF0B30039A548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54AF33BA216AF0B40039A548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54AF33BD216AF0B40039A548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54AF33BF216AF0B40039A548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54AF33C2216AF0B40039A548 /* Roku Remote WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roku Remote WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54AF33C8216AF0B40039A548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		54AF33CA216AF0B50039A548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54AF33CC216AF0B50039A548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54AF33D1216AF0B50039A548 /* Roku Remote WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Roku Remote WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54AF33D6216AF0B50039A548 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		54AF33D8216AF0B50039A548 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		54AF33DA216AF0B50039A548 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		54AF33DC216AF0B60039A548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54AF33DE216AF0B60039A548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54AF33AD216AF0B30039A548 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AF33CE216AF0B50039A548 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54AF33A7216AF0B30039A548 = {
+			isa = PBXGroup;
+			children = (
+				54AF33B2216AF0B30039A548 /* Roku Remote */,
+				54AF33C6216AF0B40039A548 /* Roku Remote WatchKit App */,
+				54AF33D5216AF0B50039A548 /* Roku Remote WatchKit Extension */,
+				54AF33B1216AF0B30039A548 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54AF33B1216AF0B30039A548 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54AF33B0216AF0B30039A548 /* Roku Remote.app */,
+				54AF33C2216AF0B40039A548 /* Roku Remote WatchKit App.app */,
+				54AF33D1216AF0B50039A548 /* Roku Remote WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54AF33B2216AF0B30039A548 /* Roku Remote */ = {
+			isa = PBXGroup;
+			children = (
+				54AF33B3216AF0B30039A548 /* AppDelegate.swift */,
+				54AF33B5216AF0B30039A548 /* ViewController.swift */,
+				54AF33B7216AF0B30039A548 /* Main.storyboard */,
+				54AF33BA216AF0B40039A548 /* Assets.xcassets */,
+				54AF33BC216AF0B40039A548 /* LaunchScreen.storyboard */,
+				54AF33BF216AF0B40039A548 /* Info.plist */,
+			);
+			path = "Roku Remote";
+			sourceTree = "<group>";
+		};
+		54AF33C6216AF0B40039A548 /* Roku Remote WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				54AF33C7216AF0B40039A548 /* Interface.storyboard */,
+				54AF33CA216AF0B50039A548 /* Assets.xcassets */,
+				54AF33CC216AF0B50039A548 /* Info.plist */,
+			);
+			path = "Roku Remote WatchKit App";
+			sourceTree = "<group>";
+		};
+		54AF33D5216AF0B50039A548 /* Roku Remote WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				54AF33D6216AF0B50039A548 /* InterfaceController.swift */,
+				54AF33D8216AF0B50039A548 /* ExtensionDelegate.swift */,
+				54AF33DA216AF0B50039A548 /* ComplicationController.swift */,
+				54AF33DC216AF0B60039A548 /* Assets.xcassets */,
+				54AF33DE216AF0B60039A548 /* Info.plist */,
+			);
+			path = "Roku Remote WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54AF33AF216AF0B30039A548 /* Roku Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54AF33E9216AF0B60039A548 /* Build configuration list for PBXNativeTarget "Roku Remote" */;
+			buildPhases = (
+				54AF33AC216AF0B30039A548 /* Sources */,
+				54AF33AD216AF0B30039A548 /* Frameworks */,
+				54AF33AE216AF0B30039A548 /* Resources */,
+				54AF33E8216AF0B60039A548 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54AF33C5216AF0B40039A548 /* PBXTargetDependency */,
+			);
+			name = "Roku Remote";
+			productName = "Roku Remote";
+			productReference = 54AF33B0216AF0B30039A548 /* Roku Remote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54AF33C1216AF0B40039A548 /* Roku Remote WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54AF33E5216AF0B60039A548 /* Build configuration list for PBXNativeTarget "Roku Remote WatchKit App" */;
+			buildPhases = (
+				54AF33C0216AF0B40039A548 /* Resources */,
+				54AF33E4216AF0B60039A548 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54AF33D4216AF0B50039A548 /* PBXTargetDependency */,
+			);
+			name = "Roku Remote WatchKit App";
+			productName = "Roku Remote WatchKit App";
+			productReference = 54AF33C2216AF0B40039A548 /* Roku Remote WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		54AF33D0216AF0B50039A548 /* Roku Remote WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54AF33E1216AF0B60039A548 /* Build configuration list for PBXNativeTarget "Roku Remote WatchKit Extension" */;
+			buildPhases = (
+				54AF33CD216AF0B50039A548 /* Sources */,
+				54AF33CE216AF0B50039A548 /* Frameworks */,
+				54AF33CF216AF0B50039A548 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Roku Remote WatchKit Extension";
+			productName = "Roku Remote WatchKit Extension";
+			productReference = 54AF33D1216AF0B50039A548 /* Roku Remote WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54AF33A8216AF0B30039A548 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Josh Birnholz";
+				TargetAttributes = {
+					54AF33AF216AF0B30039A548 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					54AF33C1216AF0B40039A548 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					54AF33D0216AF0B50039A548 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 54AF33AB216AF0B30039A548 /* Build configuration list for PBXProject "Roku Remote" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54AF33A7216AF0B30039A548;
+			productRefGroup = 54AF33B1216AF0B30039A548 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54AF33AF216AF0B30039A548 /* Roku Remote */,
+				54AF33C1216AF0B40039A548 /* Roku Remote WatchKit App */,
+				54AF33D0216AF0B50039A548 /* Roku Remote WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54AF33AE216AF0B30039A548 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AF33BE216AF0B40039A548 /* LaunchScreen.storyboard in Resources */,
+				54AF33BB216AF0B40039A548 /* Assets.xcassets in Resources */,
+				54AF33B9216AF0B30039A548 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AF33C0216AF0B40039A548 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AF33CB216AF0B50039A548 /* Assets.xcassets in Resources */,
+				54AF33C9216AF0B40039A548 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AF33CF216AF0B50039A548 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AF33DD216AF0B60039A548 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54AF33AC216AF0B30039A548 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AF33B6216AF0B30039A548 /* ViewController.swift in Sources */,
+				54AF33B4216AF0B30039A548 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AF33CD216AF0B50039A548 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AF33D9216AF0B50039A548 /* ExtensionDelegate.swift in Sources */,
+				54AF33D7216AF0B50039A548 /* InterfaceController.swift in Sources */,
+				54AF33DB216AF0B50039A548 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54AF33C5216AF0B40039A548 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54AF33C1216AF0B40039A548 /* Roku Remote WatchKit App */;
+			targetProxy = 54AF33C4216AF0B40039A548 /* PBXContainerItemProxy */;
+		};
+		54AF33D4216AF0B50039A548 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54AF33D0216AF0B50039A548 /* Roku Remote WatchKit Extension */;
+			targetProxy = 54AF33D3216AF0B50039A548 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54AF33B7216AF0B30039A548 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54AF33B8216AF0B30039A548 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54AF33BC216AF0B40039A548 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54AF33BD216AF0B40039A548 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		54AF33C7216AF0B40039A548 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54AF33C8216AF0B40039A548 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54AF33DF216AF0B60039A548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54AF33E0216AF0B60039A548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54AF33E2216AF0B60039A548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CB7D3XVLP3;
+				INFOPLIST_FILE = "Roku Remote WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.josh.birnholz.Roku-Remote.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		54AF33E3216AF0B60039A548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CB7D3XVLP3;
+				INFOPLIST_FILE = "Roku Remote WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.josh.birnholz.Roku-Remote.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		54AF33E6216AF0B60039A548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CB7D3XVLP3;
+				IBSC_MODULE = Roku_Remote_WatchKit_Extension;
+				INFOPLIST_FILE = "Roku Remote WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.josh.birnholz.Roku-Remote.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		54AF33E7216AF0B60039A548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CB7D3XVLP3;
+				IBSC_MODULE = Roku_Remote_WatchKit_Extension;
+				INFOPLIST_FILE = "Roku Remote WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.josh.birnholz.Roku-Remote.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		54AF33EA216AF0B60039A548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CB7D3XVLP3;
+				INFOPLIST_FILE = "Roku Remote/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.josh.birnholz.Roku-Remote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54AF33EB216AF0B60039A548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CB7D3XVLP3;
+				INFOPLIST_FILE = "Roku Remote/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.josh.birnholz.Roku-Remote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54AF33AB216AF0B30039A548 /* Build configuration list for PBXProject "Roku Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54AF33DF216AF0B60039A548 /* Debug */,
+				54AF33E0216AF0B60039A548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54AF33E1216AF0B60039A548 /* Build configuration list for PBXNativeTarget "Roku Remote WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54AF33E2216AF0B60039A548 /* Debug */,
+				54AF33E3216AF0B60039A548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54AF33E5216AF0B60039A548 /* Build configuration list for PBXNativeTarget "Roku Remote WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54AF33E6216AF0B60039A548 /* Debug */,
+				54AF33E7216AF0B60039A548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54AF33E9216AF0B60039A548 /* Build configuration list for PBXNativeTarget "Roku Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54AF33EA216AF0B60039A548 /* Debug */,
+				54AF33EB216AF0B60039A548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54AF33A8216AF0B30039A548 /* Project object */;
+}
