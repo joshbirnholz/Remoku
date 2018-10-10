@@ -7,6 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09E3BACCB1B119BCEBE195A2 /* Pods_Roku_Remote_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D732705BEFCE79EDF2C18F /* Pods_Roku_Remote_WatchKit_App.framework */; };
+		0E9CB33EF81D93E768B01F10 /* Pods_RokuKit_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B63A63C9A2722A725FB847 /* Pods_RokuKit_Watch.framework */; };
+		541E6462216C1CA500AEA940 /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6455216C1B7D00AEA940 /* ISO8601DateFormatter.swift */; };
+		541E6463216C1CA500AEA940 /* XMLKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6448216C1B7C00AEA940 /* XMLKey.swift */; };
+		541E6464216C1CA500AEA940 /* XMLStackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644E216C1B7C00AEA940 /* XMLStackParser.swift */; };
+		541E6467216C1CAF00AEA940 /* DecodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6450216C1B7C00AEA940 /* DecodingErrorExtension.swift */; };
+		541E6468216C1CAF00AEA940 /* XMLUnkeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6451216C1B7C00AEA940 /* XMLUnkeyedDecodingContainer.swift */; };
+		541E6469216C1CAF00AEA940 /* XMLKeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6452216C1B7C00AEA940 /* XMLKeyedDecodingContainer.swift */; };
+		541E646A216C1CAF00AEA940 /* XMLDecodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6453216C1B7C00AEA940 /* XMLDecodingStorage.swift */; };
+		541E646B216C1CAF00AEA940 /* XMLDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6454216C1B7C00AEA940 /* XMLDecoder.swift */; };
+		541E646C216C1CB400AEA940 /* XMLReferencingEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644A216C1B7C00AEA940 /* XMLReferencingEncoder.swift */; };
+		541E646D216C1CB400AEA940 /* EncodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644B216C1B7C00AEA940 /* EncodingErrorExtension.swift */; };
+		541E646E216C1CB400AEA940 /* XMLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644C216C1B7C00AEA940 /* XMLEncoder.swift */; };
+		541E646F216C1CB400AEA940 /* XMLEncodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644D216C1B7C00AEA940 /* XMLEncodingStorage.swift */; };
+		541E6479216C1D4400AEA940 /* RokuKit_Watch.h in Headers */ = {isa = PBXBuildFile; fileRef = 541E6477216C1D4400AEA940 /* RokuKit_Watch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		541E647C216C1D4400AEA940 /* RokuKit_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E6475216C1D4300AEA940 /* RokuKit_Watch.framework */; };
+		541E647D216C1D4400AEA940 /* RokuKit_Watch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 541E6475216C1D4300AEA940 /* RokuKit_Watch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		541E648C216C1D5500AEA940 /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6455216C1B7D00AEA940 /* ISO8601DateFormatter.swift */; };
+		541E648D216C1D5500AEA940 /* XMLKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6448216C1B7C00AEA940 /* XMLKey.swift */; };
+		541E648E216C1D5500AEA940 /* XMLStackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644E216C1B7C00AEA940 /* XMLStackParser.swift */; };
+		541E6490216C1D5500AEA940 /* RokuDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDD0B7216C0D50004D3DF4 /* RokuDevice.swift */; };
+		541E6491216C1D5500AEA940 /* KeyPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDD092216BFF72004D3DF4 /* KeyPress.swift */; };
+		541E6493216C1D5700AEA940 /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DDD0BC216C0F66004D3DF4 /* XMLReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		541E6494216C1D5700AEA940 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DDD0BE216C0F6B004D3DF4 /* XMLReader.m */; };
+		541E6495216C1D5E00AEA940 /* DecodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6450216C1B7C00AEA940 /* DecodingErrorExtension.swift */; };
+		541E6496216C1D5E00AEA940 /* XMLUnkeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6451216C1B7C00AEA940 /* XMLUnkeyedDecodingContainer.swift */; };
+		541E6497216C1D5E00AEA940 /* XMLKeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6452216C1B7C00AEA940 /* XMLKeyedDecodingContainer.swift */; };
+		541E6498216C1D5E00AEA940 /* XMLDecodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6453216C1B7C00AEA940 /* XMLDecodingStorage.swift */; };
+		541E6499216C1D5E00AEA940 /* XMLDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6454216C1B7C00AEA940 /* XMLDecoder.swift */; };
+		541E649A216C1DF300AEA940 /* XMLReferencingEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644A216C1B7C00AEA940 /* XMLReferencingEncoder.swift */; };
+		541E649B216C1DF300AEA940 /* EncodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644B216C1B7C00AEA940 /* EncodingErrorExtension.swift */; };
+		541E649C216C1DF300AEA940 /* XMLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644C216C1B7C00AEA940 /* XMLEncoder.swift */; };
+		541E649D216C1DF300AEA940 /* XMLEncodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644D216C1B7C00AEA940 /* XMLEncodingStorage.swift */; };
+		541E64A1216D06DB00AEA940 /* AppChooserInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E64A0216D06DB00AEA940 /* AppChooserInterfaceController.swift */; };
+		541E64A3216D0D2800AEA940 /* RemoteInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E64A2216D0D2800AEA940 /* RemoteInterfaceController.swift */; };
 		54AF33B4216AF0B30039A548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF33B3216AF0B30039A548 /* AppDelegate.swift */; };
 		54AF33B6216AF0B30039A548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF33B5216AF0B30039A548 /* ViewController.swift */; };
 		54AF33B9216AF0B30039A548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AF33B7216AF0B30039A548 /* Main.storyboard */; };
@@ -20,9 +55,27 @@
 		54AF33D9216AF0B50039A548 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF33D8216AF0B50039A548 /* ExtensionDelegate.swift */; };
 		54AF33DB216AF0B50039A548 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF33DA216AF0B50039A548 /* ComplicationController.swift */; };
 		54AF33DD216AF0B60039A548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AF33DC216AF0B60039A548 /* Assets.xcassets */; };
+		54AF3438216AF5EE0039A548 /* RokuFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF3437216AF5EE0039A548 /* RokuFinder.swift */; };
+		54DDD0AF216C0D2A004D3DF4 /* RokuKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DDD0AD216C0D2A004D3DF4 /* RokuKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54DDD0B2216C0D2A004D3DF4 /* RokuKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DDD0AB216C0D2A004D3DF4 /* RokuKit.framework */; };
+		54DDD0B3216C0D2A004D3DF4 /* RokuKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54DDD0AB216C0D2A004D3DF4 /* RokuKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54DDD0B8216C0D50004D3DF4 /* RokuDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDD0B7216C0D50004D3DF4 /* RokuDevice.swift */; };
+		54DDD0BD216C0F66004D3DF4 /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DDD0BC216C0F66004D3DF4 /* XMLReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54DDD0BF216C0F6C004D3DF4 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DDD0BE216C0F6B004D3DF4 /* XMLReader.m */; };
+		54DDD0C1216C16F5004D3DF4 /* KeyPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDD092216BFF72004D3DF4 /* KeyPress.swift */; };
+		5A660132A9A5E71C2856A946 /* Pods_Roku_Remote_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C67CE6C3296FEE70369C414 /* Pods_Roku_Remote_WatchKit_Extension.framework */; };
+		6C6E2B95F45E3059475CCE60 /* Pods_RokuKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB992A46B13CB7E115F8CFF /* Pods_RokuKit.framework */; };
+		8A05F97AF637415CC40FB387 /* Pods_Roku_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED84C682F90401FDE577423D /* Pods_Roku_Remote.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		541E647A216C1D4400AEA940 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54AF33A8216AF0B30039A548 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 541E6474216C1D4300AEA940;
+			remoteInfo = RokuKit_Watch;
+		};
 		54AF33C4216AF0B40039A548 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 54AF33A8216AF0B30039A548 /* Project object */;
@@ -37,9 +90,27 @@
 			remoteGlobalIDString = 54AF33D0216AF0B50039A548;
 			remoteInfo = "Roku Remote WatchKit Extension";
 		};
+		54DDD0B0216C0D2A004D3DF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54AF33A8216AF0B30039A548 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54DDD0AA216C0D2A004D3DF4;
+			remoteInfo = RokuKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		541E6481216C1D4400AEA940 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				541E647D216C1D4400AEA940 /* RokuKit_Watch.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54AF33E4216AF0B60039A548 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -62,9 +133,40 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54AF341B216AF3390039A548 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				54DDD0B3216C0D2A004D3DF4 /* RokuKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		03E4C9349ECE89037DCDD2C6 /* Pods-Roku Remote WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roku Remote WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roku Remote WatchKit App/Pods-Roku Remote WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		0F68B9AA44FA99BAD900888D /* Pods-Roku Remote WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roku Remote WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Roku Remote WatchKit Extension/Pods-Roku Remote WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		2EBE748DA2143B29903AAB09 /* Pods-RokuKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RokuKit/Pods-RokuKit.debug.xcconfig"; sourceTree = "<group>"; };
+		541E6448216C1B7C00AEA940 /* XMLKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLKey.swift; sourceTree = "<group>"; };
+		541E644A216C1B7C00AEA940 /* XMLReferencingEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLReferencingEncoder.swift; sourceTree = "<group>"; };
+		541E644B216C1B7C00AEA940 /* EncodingErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingErrorExtension.swift; sourceTree = "<group>"; };
+		541E644C216C1B7C00AEA940 /* XMLEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLEncoder.swift; sourceTree = "<group>"; };
+		541E644D216C1B7C00AEA940 /* XMLEncodingStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLEncodingStorage.swift; sourceTree = "<group>"; };
+		541E644E216C1B7C00AEA940 /* XMLStackParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLStackParser.swift; sourceTree = "<group>"; };
+		541E6450216C1B7C00AEA940 /* DecodingErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingErrorExtension.swift; sourceTree = "<group>"; };
+		541E6451216C1B7C00AEA940 /* XMLUnkeyedDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLUnkeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		541E6452216C1B7C00AEA940 /* XMLKeyedDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLKeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		541E6453216C1B7C00AEA940 /* XMLDecodingStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLDecodingStorage.swift; sourceTree = "<group>"; };
+		541E6454216C1B7C00AEA940 /* XMLDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLDecoder.swift; sourceTree = "<group>"; };
+		541E6455216C1B7D00AEA940 /* ISO8601DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO8601DateFormatter.swift; sourceTree = "<group>"; };
+		541E6475216C1D4300AEA940 /* RokuKit_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RokuKit_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		541E6477216C1D4400AEA940 /* RokuKit_Watch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RokuKit_Watch.h; sourceTree = "<group>"; };
+		541E6478216C1D4400AEA940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		541E64A0216D06DB00AEA940 /* AppChooserInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChooserInterfaceController.swift; sourceTree = "<group>"; };
+		541E64A2216D0D2800AEA940 /* RemoteInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteInterfaceController.swift; sourceTree = "<group>"; };
 		54AF33B0216AF0B30039A548 /* Roku Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roku Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AF33B3216AF0B30039A548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54AF33B5216AF0B30039A548 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,13 +184,43 @@
 		54AF33DA216AF0B50039A548 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		54AF33DC216AF0B60039A548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54AF33DE216AF0B60039A548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54AF3437216AF5EE0039A548 /* RokuFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RokuFinder.swift; sourceTree = "<group>"; };
+		54DDD092216BFF72004D3DF4 /* KeyPress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPress.swift; sourceTree = "<group>"; };
+		54DDD0AB216C0D2A004D3DF4 /* RokuKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RokuKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DDD0AD216C0D2A004D3DF4 /* RokuKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RokuKit.h; sourceTree = "<group>"; };
+		54DDD0AE216C0D2A004D3DF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54DDD0B7216C0D50004D3DF4 /* RokuDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RokuDevice.swift; sourceTree = "<group>"; };
+		54DDD0BC216C0F66004D3DF4 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		54DDD0BE216C0F6B004D3DF4 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		648CB146E7C27F4A9C6B2868 /* Pods-Roku Remote WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roku Remote WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Roku Remote WatchKit App/Pods-Roku Remote WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		6C4DCF02C469F45634BABAED /* Pods-RokuKit_Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuKit_Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RokuKit_Watch/Pods-RokuKit_Watch.debug.xcconfig"; sourceTree = "<group>"; };
+		7C67CE6C3296FEE70369C414 /* Pods_Roku_Remote_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roku_Remote_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88C502EDD437834060C62D06 /* Pods-Roku Remote WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roku Remote WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roku Remote WatchKit Extension/Pods-Roku Remote WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		BE3AF269615FA178D1FC218C /* Pods-RokuKit_Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuKit_Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-RokuKit_Watch/Pods-RokuKit_Watch.release.xcconfig"; sourceTree = "<group>"; };
+		DEB992A46B13CB7E115F8CFF /* Pods_RokuKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RokuKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E31CB052AE5E0E291888731E /* Pods-Roku Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roku Remote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Roku Remote/Pods-Roku Remote.release.xcconfig"; sourceTree = "<group>"; };
+		E5D732705BEFCE79EDF2C18F /* Pods_Roku_Remote_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roku_Remote_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E750440D159381C1C5B4100A /* Pods-RokuKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-RokuKit/Pods-RokuKit.release.xcconfig"; sourceTree = "<group>"; };
+		ED84C682F90401FDE577423D /* Pods_Roku_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roku_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8B63A63C9A2722A725FB847 /* Pods_RokuKit_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RokuKit_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA921CCD510B047283FECE3D /* Pods-Roku Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roku Remote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roku Remote/Pods-Roku Remote.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		541E6472216C1D4300AEA940 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9CB33EF81D93E768B01F10 /* Pods_RokuKit_Watch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54AF33AD216AF0B30039A548 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54DDD0B2216C0D2A004D3DF4 /* RokuKit.framework in Frameworks */,
+				8A05F97AF637415CC40FB387 /* Pods_Roku_Remote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,19 +228,85 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				541E647C216C1D4400AEA940 /* RokuKit_Watch.framework in Frameworks */,
+				5A660132A9A5E71C2856A946 /* Pods_Roku_Remote_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DDD0A8216C0D2A004D3DF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C6E2B95F45E3059475CCE60 /* Pods_RokuKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CB12ABA2FC54DAD8526F662 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E3BACCB1B119BCEBE195A2 /* Pods_Roku_Remote_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		541E643D216C1B6D00AEA940 /* XMLParsing */ = {
+			isa = PBXGroup;
+			children = (
+				541E644F216C1B7C00AEA940 /* Decoder */,
+				541E6449216C1B7C00AEA940 /* Encoder */,
+				541E6455216C1B7D00AEA940 /* ISO8601DateFormatter.swift */,
+				541E6448216C1B7C00AEA940 /* XMLKey.swift */,
+				541E644E216C1B7C00AEA940 /* XMLStackParser.swift */,
+			);
+			path = XMLParsing;
+			sourceTree = "<group>";
+		};
+		541E6449216C1B7C00AEA940 /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				541E644A216C1B7C00AEA940 /* XMLReferencingEncoder.swift */,
+				541E644B216C1B7C00AEA940 /* EncodingErrorExtension.swift */,
+				541E644C216C1B7C00AEA940 /* XMLEncoder.swift */,
+				541E644D216C1B7C00AEA940 /* XMLEncodingStorage.swift */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		541E644F216C1B7C00AEA940 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				541E6450216C1B7C00AEA940 /* DecodingErrorExtension.swift */,
+				541E6451216C1B7C00AEA940 /* XMLUnkeyedDecodingContainer.swift */,
+				541E6452216C1B7C00AEA940 /* XMLKeyedDecodingContainer.swift */,
+				541E6453216C1B7C00AEA940 /* XMLDecodingStorage.swift */,
+				541E6454216C1B7C00AEA940 /* XMLDecoder.swift */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		541E6476216C1D4400AEA940 /* RokuKit_Watch */ = {
+			isa = PBXGroup;
+			children = (
+				541E6477216C1D4400AEA940 /* RokuKit_Watch.h */,
+				541E6478216C1D4400AEA940 /* Info.plist */,
+			);
+			path = RokuKit_Watch;
+			sourceTree = "<group>";
+		};
 		54AF33A7216AF0B30039A548 = {
 			isa = PBXGroup;
 			children = (
 				54AF33B2216AF0B30039A548 /* Roku Remote */,
 				54AF33C6216AF0B40039A548 /* Roku Remote WatchKit App */,
 				54AF33D5216AF0B50039A548 /* Roku Remote WatchKit Extension */,
+				54DDD0AC216C0D2A004D3DF4 /* RokuKit */,
+				541E6476216C1D4400AEA940 /* RokuKit_Watch */,
 				54AF33B1216AF0B30039A548 /* Products */,
+				D86C09E47DC090B3A84E5710 /* Pods */,
+				5ED36D17B3C08FF530220B66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +316,8 @@
 				54AF33B0216AF0B30039A548 /* Roku Remote.app */,
 				54AF33C2216AF0B40039A548 /* Roku Remote WatchKit App.app */,
 				54AF33D1216AF0B50039A548 /* Roku Remote WatchKit Extension.appex */,
+				54DDD0AB216C0D2A004D3DF4 /* RokuKit.framework */,
+				541E6475216C1D4300AEA940 /* RokuKit_Watch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +331,7 @@
 				54AF33BA216AF0B40039A548 /* Assets.xcassets */,
 				54AF33BC216AF0B40039A548 /* LaunchScreen.storyboard */,
 				54AF33BF216AF0B40039A548 /* Info.plist */,
+				54AF3437216AF5EE0039A548 /* RokuFinder.swift */,
 			);
 			path = "Roku Remote";
 			sourceTree = "<group>";
@@ -149,30 +350,119 @@
 			isa = PBXGroup;
 			children = (
 				54AF33D6216AF0B50039A548 /* InterfaceController.swift */,
+				541E64A0216D06DB00AEA940 /* AppChooserInterfaceController.swift */,
 				54AF33D8216AF0B50039A548 /* ExtensionDelegate.swift */,
 				54AF33DA216AF0B50039A548 /* ComplicationController.swift */,
+				541E64A2216D0D2800AEA940 /* RemoteInterfaceController.swift */,
 				54AF33DC216AF0B60039A548 /* Assets.xcassets */,
 				54AF33DE216AF0B60039A548 /* Info.plist */,
 			);
 			path = "Roku Remote WatchKit Extension";
 			sourceTree = "<group>";
 		};
+		54DDD0AC216C0D2A004D3DF4 /* RokuKit */ = {
+			isa = PBXGroup;
+			children = (
+				541E643D216C1B6D00AEA940 /* XMLParsing */,
+				54DDD0B7216C0D50004D3DF4 /* RokuDevice.swift */,
+				54DDD092216BFF72004D3DF4 /* KeyPress.swift */,
+				54DDD0AD216C0D2A004D3DF4 /* RokuKit.h */,
+				54DDD0AE216C0D2A004D3DF4 /* Info.plist */,
+				54DDD0BC216C0F66004D3DF4 /* XMLReader.h */,
+				54DDD0BE216C0F6B004D3DF4 /* XMLReader.m */,
+			);
+			path = RokuKit;
+			sourceTree = "<group>";
+		};
+		5ED36D17B3C08FF530220B66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED84C682F90401FDE577423D /* Pods_Roku_Remote.framework */,
+				E5D732705BEFCE79EDF2C18F /* Pods_Roku_Remote_WatchKit_App.framework */,
+				7C67CE6C3296FEE70369C414 /* Pods_Roku_Remote_WatchKit_Extension.framework */,
+				DEB992A46B13CB7E115F8CFF /* Pods_RokuKit.framework */,
+				F8B63A63C9A2722A725FB847 /* Pods_RokuKit_Watch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D86C09E47DC090B3A84E5710 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA921CCD510B047283FECE3D /* Pods-Roku Remote.debug.xcconfig */,
+				E31CB052AE5E0E291888731E /* Pods-Roku Remote.release.xcconfig */,
+				03E4C9349ECE89037DCDD2C6 /* Pods-Roku Remote WatchKit App.debug.xcconfig */,
+				648CB146E7C27F4A9C6B2868 /* Pods-Roku Remote WatchKit App.release.xcconfig */,
+				88C502EDD437834060C62D06 /* Pods-Roku Remote WatchKit Extension.debug.xcconfig */,
+				0F68B9AA44FA99BAD900888D /* Pods-Roku Remote WatchKit Extension.release.xcconfig */,
+				2EBE748DA2143B29903AAB09 /* Pods-RokuKit.debug.xcconfig */,
+				E750440D159381C1C5B4100A /* Pods-RokuKit.release.xcconfig */,
+				6C4DCF02C469F45634BABAED /* Pods-RokuKit_Watch.debug.xcconfig */,
+				BE3AF269615FA178D1FC218C /* Pods-RokuKit_Watch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		541E6470216C1D4300AEA940 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541E6479216C1D4400AEA940 /* RokuKit_Watch.h in Headers */,
+				541E6493216C1D5700AEA940 /* XMLReader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DDD0A6216C0D2A004D3DF4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DDD0AF216C0D2A004D3DF4 /* RokuKit.h in Headers */,
+				54DDD0BD216C0F66004D3DF4 /* XMLReader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		541E6474216C1D4300AEA940 /* RokuKit_Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541E647E216C1D4400AEA940 /* Build configuration list for PBXNativeTarget "RokuKit_Watch" */;
+			buildPhases = (
+				D3630967C1F70EE1842507BB /* [CP] Check Pods Manifest.lock */,
+				541E6470216C1D4300AEA940 /* Headers */,
+				541E6471216C1D4300AEA940 /* Sources */,
+				541E6472216C1D4300AEA940 /* Frameworks */,
+				541E6473216C1D4300AEA940 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RokuKit_Watch;
+			productName = RokuKit_Watch;
+			productReference = 541E6475216C1D4300AEA940 /* RokuKit_Watch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		54AF33AF216AF0B30039A548 /* Roku Remote */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54AF33E9216AF0B60039A548 /* Build configuration list for PBXNativeTarget "Roku Remote" */;
 			buildPhases = (
+				EAA4ED5AE2321A0F2843BF38 /* [CP] Check Pods Manifest.lock */,
 				54AF33AC216AF0B30039A548 /* Sources */,
 				54AF33AD216AF0B30039A548 /* Frameworks */,
 				54AF33AE216AF0B30039A548 /* Resources */,
 				54AF33E8216AF0B60039A548 /* Embed Watch Content */,
+				54AF341B216AF3390039A548 /* Embed Frameworks */,
+				C6CDEDD97A44618D55DE53A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				54AF33C5216AF0B40039A548 /* PBXTargetDependency */,
+				54DDD0B1216C0D2A004D3DF4 /* PBXTargetDependency */,
 			);
 			name = "Roku Remote";
 			productName = "Roku Remote";
@@ -183,8 +473,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54AF33E5216AF0B60039A548 /* Build configuration list for PBXNativeTarget "Roku Remote WatchKit App" */;
 			buildPhases = (
+				6E88719E5288907B509B6A2E /* [CP] Check Pods Manifest.lock */,
 				54AF33C0216AF0B40039A548 /* Resources */,
 				54AF33E4216AF0B60039A548 /* Embed App Extensions */,
+				9CB12ABA2FC54DAD8526F662 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,18 +492,40 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54AF33E1216AF0B60039A548 /* Build configuration list for PBXNativeTarget "Roku Remote WatchKit Extension" */;
 			buildPhases = (
+				3B0171281E3178BA675EB546 /* [CP] Check Pods Manifest.lock */,
 				54AF33CD216AF0B50039A548 /* Sources */,
 				54AF33CE216AF0B50039A548 /* Frameworks */,
 				54AF33CF216AF0B50039A548 /* Resources */,
+				541E6481216C1D4400AEA940 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				541E647B216C1D4400AEA940 /* PBXTargetDependency */,
 			);
 			name = "Roku Remote WatchKit Extension";
 			productName = "Roku Remote WatchKit Extension";
 			productReference = 54AF33D1216AF0B50039A548 /* Roku Remote WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		54DDD0AA216C0D2A004D3DF4 /* RokuKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54DDD0B4216C0D2A004D3DF4 /* Build configuration list for PBXNativeTarget "RokuKit" */;
+			buildPhases = (
+				4C335C8529D112CB543F3E15 /* [CP] Check Pods Manifest.lock */,
+				54DDD0A6216C0D2A004D3DF4 /* Headers */,
+				54DDD0A7216C0D2A004D3DF4 /* Sources */,
+				54DDD0A8216C0D2A004D3DF4 /* Frameworks */,
+				54DDD0A9216C0D2A004D3DF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RokuKit;
+			productName = RokuKit;
+			productReference = 54DDD0AB216C0D2A004D3DF4 /* RokuKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -223,14 +537,22 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Josh Birnholz";
 				TargetAttributes = {
+					541E6474216C1D4300AEA940 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					54AF33AF216AF0B30039A548 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					54AF33C1216AF0B40039A548 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 					54AF33D0216AF0B50039A548 = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					54DDD0AA216C0D2A004D3DF4 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -250,11 +572,20 @@
 				54AF33AF216AF0B30039A548 /* Roku Remote */,
 				54AF33C1216AF0B40039A548 /* Roku Remote WatchKit App */,
 				54AF33D0216AF0B50039A548 /* Roku Remote WatchKit Extension */,
+				54DDD0AA216C0D2A004D3DF4 /* RokuKit */,
+				541E6474216C1D4300AEA940 /* RokuKit_Watch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		541E6473216C1D4300AEA940 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54AF33AE216AF0B30039A548 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,14 +613,155 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54DDD0A9216C0D2A004D3DF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B0171281E3178BA675EB546 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Roku Remote WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C335C8529D112CB543F3E15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RokuKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E88719E5288907B509B6A2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Roku Remote WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6CDEDD97A44618D55DE53A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Roku Remote/Pods-Roku Remote-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roku Remote/Pods-Roku Remote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3630967C1F70EE1842507BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RokuKit_Watch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAA4ED5AE2321A0F2843BF38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Roku Remote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		541E6471216C1D4300AEA940 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541E6490216C1D5500AEA940 /* RokuDevice.swift in Sources */,
+				541E6491216C1D5500AEA940 /* KeyPress.swift in Sources */,
+				541E648C216C1D5500AEA940 /* ISO8601DateFormatter.swift in Sources */,
+				541E649A216C1DF300AEA940 /* XMLReferencingEncoder.swift in Sources */,
+				541E648E216C1D5500AEA940 /* XMLStackParser.swift in Sources */,
+				541E6498216C1D5E00AEA940 /* XMLDecodingStorage.swift in Sources */,
+				541E649B216C1DF300AEA940 /* EncodingErrorExtension.swift in Sources */,
+				541E6495216C1D5E00AEA940 /* DecodingErrorExtension.swift in Sources */,
+				541E6494216C1D5700AEA940 /* XMLReader.m in Sources */,
+				541E649D216C1DF300AEA940 /* XMLEncodingStorage.swift in Sources */,
+				541E6496216C1D5E00AEA940 /* XMLUnkeyedDecodingContainer.swift in Sources */,
+				541E649C216C1DF300AEA940 /* XMLEncoder.swift in Sources */,
+				541E6497216C1D5E00AEA940 /* XMLKeyedDecodingContainer.swift in Sources */,
+				541E648D216C1D5500AEA940 /* XMLKey.swift in Sources */,
+				541E6499216C1D5E00AEA940 /* XMLDecoder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54AF33AC216AF0B30039A548 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				54AF33B6216AF0B30039A548 /* ViewController.swift in Sources */,
+				54AF3438216AF5EE0039A548 /* RokuFinder.swift in Sources */,
 				54AF33B4216AF0B30039A548 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,14 +771,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				54AF33D9216AF0B50039A548 /* ExtensionDelegate.swift in Sources */,
+				541E64A3216D0D2800AEA940 /* RemoteInterfaceController.swift in Sources */,
 				54AF33D7216AF0B50039A548 /* InterfaceController.swift in Sources */,
 				54AF33DB216AF0B50039A548 /* ComplicationController.swift in Sources */,
+				541E64A1216D06DB00AEA940 /* AppChooserInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DDD0A7216C0D2A004D3DF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DDD0BF216C0F6C004D3DF4 /* XMLReader.m in Sources */,
+				541E6464216C1CA500AEA940 /* XMLStackParser.swift in Sources */,
+				541E6462216C1CA500AEA940 /* ISO8601DateFormatter.swift in Sources */,
+				541E646C216C1CB400AEA940 /* XMLReferencingEncoder.swift in Sources */,
+				541E6463216C1CA500AEA940 /* XMLKey.swift in Sources */,
+				541E646A216C1CAF00AEA940 /* XMLDecodingStorage.swift in Sources */,
+				541E646D216C1CB400AEA940 /* EncodingErrorExtension.swift in Sources */,
+				541E6467216C1CAF00AEA940 /* DecodingErrorExtension.swift in Sources */,
+				54DDD0B8216C0D50004D3DF4 /* RokuDevice.swift in Sources */,
+				541E646F216C1CB400AEA940 /* XMLEncodingStorage.swift in Sources */,
+				541E6468216C1CAF00AEA940 /* XMLUnkeyedDecodingContainer.swift in Sources */,
+				541E646E216C1CB400AEA940 /* XMLEncoder.swift in Sources */,
+				541E6469216C1CAF00AEA940 /* XMLKeyedDecodingContainer.swift in Sources */,
+				54DDD0C1216C16F5004D3DF4 /* KeyPress.swift in Sources */,
+				541E646B216C1CAF00AEA940 /* XMLDecoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		541E647B216C1D4400AEA940 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 541E6474216C1D4300AEA940 /* RokuKit_Watch */;
+			targetProxy = 541E647A216C1D4400AEA940 /* PBXContainerItemProxy */;
+		};
 		54AF33C5216AF0B40039A548 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 54AF33C1216AF0B40039A548 /* Roku Remote WatchKit App */;
@@ -316,6 +817,11 @@
 			isa = PBXTargetDependency;
 			target = 54AF33D0216AF0B50039A548 /* Roku Remote WatchKit Extension */;
 			targetProxy = 54AF33D3216AF0B50039A548 /* PBXContainerItemProxy */;
+		};
+		54DDD0B1216C0D2A004D3DF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54DDD0AA216C0D2A004D3DF4 /* RokuKit */;
+			targetProxy = 54DDD0B0216C0D2A004D3DF4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -347,6 +853,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		541E647F216C1D4400AEA940 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C4DCF02C469F45634BABAED /* Pods-RokuKit_Watch.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CB7D3XVLP3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RokuKit_Watch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.josh.birnholz.RokuKit-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		541E6480216C1D4400AEA940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3AF269615FA178D1FC218C /* Pods-RokuKit_Watch.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CB7D3XVLP3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RokuKit_Watch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.josh.birnholz.RokuKit-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
 		54AF33DF216AF0B60039A548 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -465,6 +1035,7 @@
 		};
 		54AF33E2216AF0B60039A548 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88C502EDD437834060C62D06 /* Pods-Roku Remote WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -481,12 +1052,13 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4;
 			};
 			name = Debug;
 		};
 		54AF33E3216AF0B60039A548 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F68B9AA44FA99BAD900888D /* Pods-Roku Remote WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -503,12 +1075,13 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4;
 			};
 			name = Release;
 		};
 		54AF33E6216AF0B60039A548 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03E4C9349ECE89037DCDD2C6 /* Pods-Roku Remote WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -522,12 +1095,13 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4;
 			};
 			name = Debug;
 		};
 		54AF33E7216AF0B60039A548 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 648CB146E7C27F4A9C6B2868 /* Pods-Roku Remote WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -541,35 +1115,44 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4;
 			};
 			name = Release;
 		};
 		54AF33EA216AF0B60039A548 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA921CCD510B047283FECE3D /* Pods-Roku Remote.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CB7D3XVLP3;
 				INFOPLIST_FILE = "Roku Remote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josh.birnholz.Roku-Remote";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		54AF33EB216AF0B60039A548 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E31CB052AE5E0E291888731E /* Pods-Roku Remote.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CB7D3XVLP3;
 				INFOPLIST_FILE = "Roku Remote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,13 +1160,85 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josh.birnholz.Roku-Remote";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		54DDD0B5216C0D2A004D3DF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EBE748DA2143B29903AAB09 /* Pods-RokuKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CB7D3XVLP3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RokuKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josh.birnholz.RokuKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		54DDD0B6216C0D2A004D3DF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E750440D159381C1C5B4100A /* Pods-RokuKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CB7D3XVLP3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RokuKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josh.birnholz.RokuKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		541E647E216C1D4400AEA940 /* Build configuration list for PBXNativeTarget "RokuKit_Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541E647F216C1D4400AEA940 /* Debug */,
+				541E6480216C1D4400AEA940 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		54AF33AB216AF0B30039A548 /* Build configuration list for PBXProject "Roku Remote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -616,6 +1271,15 @@
 			buildConfigurations = (
 				54AF33EA216AF0B60039A548 /* Debug */,
 				54AF33EB216AF0B60039A548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54DDD0B4216C0D2A004D3DF4 /* Build configuration list for PBXNativeTarget "RokuKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DDD0B5216C0D2A004D3DF4 /* Debug */,
+				54DDD0B6216C0D2A004D3DF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

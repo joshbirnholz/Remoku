@@ -19,6 +19,39 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>RokuKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>RokuKit_Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+		<key>SwiftAbstractLogger.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>SwiftSSDP.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>54AF33AF216AF0B30039A548</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>54AF33C1216AF0B40039A548</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
