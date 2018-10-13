@@ -114,7 +114,7 @@ class AppChooserInterfaceController: WKInterfaceController {
 		appsTable.setNumberOfRows(appChunks.count, withRowType: "CompactRowController")
 		
 		for (index, chunk) in appChunks.enumerated() {
-			let row = appsTable.rowController(at: index) as! CompactRowController
+			guard let row = appsTable.rowController(at: index) as? CompactRowController else { return }
 			
 			row.apps = chunk
 			row.presenter = self

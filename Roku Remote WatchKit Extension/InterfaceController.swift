@@ -8,7 +8,6 @@
 
 import Foundation
 import WatchKit
-import WatchConnectivity
 import RokuKit_Watch
 
 class InterfaceController: WKInterfaceController {
@@ -48,7 +47,7 @@ class InterfaceController: WKInterfaceController {
 	}
 	
 	
-	let localFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("rokudevice.plist")
+	let localFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("rokudevice.plist")
 	
 	@IBOutlet weak var currentAppLabel: WKInterfaceLabel!
 	@IBOutlet var currentAppButton: WKInterfaceButton!
@@ -65,16 +64,23 @@ class InterfaceController: WKInterfaceController {
 	override func awake(withContext context: Any?) {
         super.awake(withContext: context)
 		
-		WCSession.default.delegate = self
-		WCSession.default.activate()
+		let device: RokuDevice? = {
+			if let device = context as? RokuDevice {
+				return device
+			} else {
+				do {
+					return try self.loadSavedDevice()
+				} catch {
+					print("Error loading locally saved device", error.localizedDescription)
+					return nil
+				}
+			}
+		}()
 		
-		do {
-			try loadSavedDevice()
-			
-			loadApps()
-		} catch {
-			print(error.localizedDescription)
-		}
+		self.device = device
+		configureDevice()
+		loadApps()
+		
     }
 	
 	override func didAppear() {
@@ -82,6 +88,8 @@ class InterfaceController: WKInterfaceController {
 	}
 	
 	func configureDevice() {
+		previousRokuSerial = device?.serialNumber
+		
 		if let device = device {
 			DispatchQueue.main.async {
 				self.setTitle(device.friendlyDeviceName)
@@ -170,45 +178,12 @@ class InterfaceController: WKInterfaceController {
 		presentController(withName: "Remote", context: device)
 	}
 	
-	func loadSavedDevice() throws {
-		guard let localFileURL = localFileURL else { return }
+	func loadSavedDevice() throws -> RokuDevice {
 		let data = try Data(contentsOf: localFileURL)
 		let device = try PropertyListDecoder().decode(RokuDevice.self, from: data)
 		
-		self.device = device
-		configureDevice()
-		loadApps()
+		return device
 	}
-}
-
-extension InterfaceController: WCSessionDelegate {
-	func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-		
-	}
-	
-	func session(_ session: WCSession, didReceive file: WCSessionFile) {
-		guard let localFileURL = localFileURL else { return }
-		
-		do {
-			
-			try? FileManager.default.removeItem(at: localFileURL)
-			
-			try FileManager.default.moveItem(at: file.fileURL, to: localFileURL)
-			
-			try loadSavedDevice()
-			
-			if let device = device {
-				DispatchQueue.main.async {
-					self.presentAlert(withTitle: "Connected to ”\(device.friendlyDeviceName)”", message: nil, preferredStyle: .alert, actions: [WKAlertAction(title: "OK", style: .default, handler: {})])
-				}
-			}
-			
-		} catch {
-			print(error.localizedDescription)
-		}
-		
-	}
-	
 }
 
 extension InterfaceController: RokuDeviceDelegate {

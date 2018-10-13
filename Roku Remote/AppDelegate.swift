@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		WCSession.default.delegate = self
+		WCSession.default.activate()
+		
 		return true
 	}
 
@@ -44,3 +49,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: WCSessionDelegate {
+	func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+		print(#function)
+	}
+	
+	func sessionDidBecomeInactive(_ session: WCSession) {
+		print(#function)
+	}
+	
+	func sessionDidDeactivate(_ session: WCSession) {
+		print(#function)
+	}
+	
+	func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+		do {
+			let devicesData = try Data(contentsOf: enabledDevicesURL)
+			
+			replyHandler(["data": devicesData])
+			
+		} catch {
+			replyHandler(["error": error.localizedDescription])
+		}
+	}
+	
+	
+}

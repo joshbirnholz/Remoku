@@ -22,12 +22,12 @@
 		<key>RokuKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>10</integer>
 		</dict>
 		<key>RokuKit_Watch.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>11</integer>
 		</dict>
 		<key>SwiftAbstractLogger.xcscheme</key>
 		<dict>

@@ -8,24 +8,44 @@
 
 import Foundation
 
+public struct NetworkInfo: Codable {
+	var ssid: String
+	var bssid: String
+	
+	public init(ssid: String, bssid: String) {
+		self.ssid = ssid
+		self.bssid = bssid
+	}
+}
+
 public class RokuDevice: NSObject, Codable {
 	public var currentLocation: URL!
 	public var serialNumber: String
 	public var modelName: String
+	public var friendlyModelName: String
 	public var isTV: Bool
 	public var isStick: Bool
 	public var friendlyDeviceName: String
 	public var apps: [App]! = []
 	
+	public var connectedNetworkInfo: NetworkInfo?
+	
+	public override func isEqual(_ object: Any?) -> Bool {
+		guard let otherDevice = object as? RokuDevice else { return false }
+		
+		return serialNumber == otherDevice.serialNumber
+	}
+	
 	public weak var delegate: RokuDeviceDelegate?
 	
-	private init(currentLocation: URL, serialNumber: String, modelName: String, isTV: Bool, isStick: Bool, friendlyDeviceName: String, apps: [App]) {
+	private init(currentLocation: URL, serialNumber: String, modelName: String, isTV: Bool, isStick: Bool, friendlyDeviceName: String, friendlyModelName: String, apps: [App]) {
 		self.currentLocation = currentLocation
 		self.serialNumber = serialNumber
 		self.modelName = modelName
 		self.isTV = isTV
 		self.isStick = isStick
 		self.friendlyDeviceName = friendlyDeviceName
+		self.friendlyModelName = friendlyModelName
 		self.apps = apps
 	}
 	
@@ -57,20 +77,25 @@ public class RokuDevice: NSObject, Codable {
 		
 	}
 	
-	public static func create(from url: URL, completion: @escaping ((RokuDevice?) -> Void)) {
+	public static func create(from url: URL, completion: @escaping ((RokuDevice?, Data?) -> Void)) {
 		DispatchQueue.global(qos: .userInitiated).async {
 			let deviceInfoURL = url.appendingPathComponent("query").appendingPathComponent("device-info")
-			let data = try! Data(contentsOf: deviceInfoURL)
+			
+			guard let data = try? Data(contentsOf: deviceInfoURL) else {
+				completion(nil, nil)
+				return
+				
+			}
 			
 			guard let deviceInfo = try? XMLDecoder().decode(RokuDevice.self, from: data) else {
-				completion(nil)
+				completion(nil, data)
 				return
 			}
 			
 			deviceInfo.currentLocation = url
 			
 			DispatchQueue.main.async {
-				completion(deviceInfo)
+				completion(deviceInfo, data)
 			}
 		}
 	}
@@ -162,6 +187,7 @@ public class RokuDevice: NSObject, Codable {
 	enum CodingKeys: String, CodingKey {
 		case serialNumber = "serial-number"
 		case modelName = "model-name"
+		case friendlyModelName = "friendly-model-name"
 		case isTV = "is-tv"
 		case isStick = "is-stick"
 		case friendlyDeviceName = "friendly-device-name"
@@ -172,26 +198,17 @@ public class RokuDevice: NSObject, Codable {
 	public func getActiveApp(completion: @escaping ((App?) -> Void)) {
 		DispatchQueue.global(qos: .userInteractive).async {
 			guard let appData: Data = {
-				if self.serialNumber == RokuDevice.dummyDevice.serialNumber && self.currentLocation == RokuDevice.dummyDevice.currentLocation {
-					return """
-					<?xml version="1.0" encoding="UTF-8" ?>
-					<active-app>
-					<app id="tvinput.hdmi1" type="tvin" version="1.0.0">Switch/PS4/PS3</app>
-					</active-app>
-					""".data(using: .utf8)!
-				} else {
-					let appURL = self.currentLocation.appendingPathComponent("query").appendingPathComponent("active-app")
-					let req = URLRequest(url: appURL, cachePolicy: .reloadIgnoringLocalCacheData)
-					let semaphore = DispatchSemaphore(value: 0)
-					var appData: Data?
-					URLSession(configuration: .default).dataTask(with: req, completionHandler: { data, response, error in
-						appData = data
-						print("Got active app data")
-						semaphore.signal()
-					}).resume()
-					semaphore.wait()
-					return appData
-				}
+				let appURL = self.currentLocation.appendingPathComponent("query").appendingPathComponent("active-app")
+				let req = URLRequest(url: appURL, cachePolicy: .reloadIgnoringLocalCacheData)
+				let semaphore = DispatchSemaphore(value: 0)
+				var appData: Data?
+				URLSession(configuration: .default).dataTask(with: req, completionHandler: { data, response, error in
+					appData = data
+					print("Got active app data")
+					semaphore.signal()
+				}).resume()
+				semaphore.wait()
+				return appData
 				}() else {
 					completion(nil)
 					return
@@ -245,7 +262,9 @@ public class RokuDevice: NSObject, Codable {
 		
 	}
 	
-	public static let dummyDevice = RokuDevice(currentLocation: URL(string: "http://192.168.0.4:8060/")!, serialNumber: "1GU48T017973", modelName: "Roku 3", isTV: true, isStick: false, friendlyDeviceName: "Dummy", apps: [])
+	public override var debugDescription: String {
+		return "\(friendlyDeviceName) (SN: \(serialNumber)"
+	}
 }
 
 public protocol RokuDeviceDelegate: class {
