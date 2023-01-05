@@ -50,12 +50,10 @@ class InterfaceController: WKInterfaceController {
 	let localFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("rokudevice.plist")
 	
 	@IBOutlet weak var currentAppLabel: WKInterfaceLabel!
-	@IBOutlet var currentAppButton: WKInterfaceButton!
 	
 	fileprivate func loadApps() {
-		device?.loadApps {
+		device?.loadApps { _ in
 			DispatchQueue.main.async {
-				self.currentAppButton.setEnabled(true)
 				self.currentAppLabel.setTextColor(.white)
 			}
 		}
@@ -88,7 +86,7 @@ class InterfaceController: WKInterfaceController {
 	}
 	
 	func configureDevice() {
-		previousRokuSerial = device?.serialNumber
+		Global.previousRokuSerial = device?.serialNumber
 		
 		if let device = device {
 			DispatchQueue.main.async {
@@ -105,7 +103,7 @@ class InterfaceController: WKInterfaceController {
 			crownSequencer.focus()
 		} else {
 			DispatchQueue.main.async {
-				self.setTitle("Roku Remote")
+				self.setTitle("Remoku")
 				self.currentAppLabel.setText("Not Connected")
 				
 				self.presentAlert(withTitle: "Not Connected", message: "Open the app on your iPhone to connect to a Roku device.", preferredStyle: .alert, actions: [WKAlertAction(title: "OK", style: .default, handler: { })])
@@ -116,7 +114,10 @@ class InterfaceController: WKInterfaceController {
 		
 	}
     
-    override func willActivate() {
+	@IBAction func remoteButtonPressed() {
+		presentController(withName: "Remote", context: device)
+	}
+	override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
     }
@@ -156,26 +157,15 @@ class InterfaceController: WKInterfaceController {
 	@IBAction func micButtonPressed() {
 		guard let device = device else { return }
 		
-		#if targetEnvironment(simulator)
-			device.send(litString: "This Is Us")
-		#else
 		presentTextInputController(withSuggestions: [], allowedInputMode: .plain) { results in
 			if let text = (results?.first as? String) {
 				device.send(litString: text)
 			}
 		}
-		#endif
 	}
 	
-	@IBAction func appButtonPressed() {
-		guard let device = device, let apps = device.apps, !apps.isEmpty else { return }
-		self.pushController(withName: "AppChooser", context: device)
-		
-	}
-	
-	@IBAction func remoteButtonPressed() {
-		guard let device = device else { return }
-		presentController(withName: "Remote", context: device)
+	override func contextForSegue(withIdentifier segueIdentifier: String) -> Any? {
+		return device
 	}
 	
 	func loadSavedDevice() throws -> RokuDevice {

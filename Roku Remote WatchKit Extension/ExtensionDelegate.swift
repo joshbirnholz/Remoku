@@ -11,9 +11,13 @@ import WatchConnectivity
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 	
+	weak var rootInterfaceController: DeviceFinderInterfaceController?
+	
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
 		
+		WCSession.default.delegate = self
+		WCSession.default.activate()
     }
 
     func applicationDidBecomeActive() {
@@ -35,6 +39,9 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
                 backgroundTask.setTaskCompletedWithSnapshot(false)
             case let snapshotTask as WKSnapshotRefreshBackgroundTask:
                 // Snapshot tasks have a unique completion call, make sure to set your expiration date
+				rootInterfaceController?.popToRootController()
+				rootInterfaceController?.loadEnabledDevices(autoload: true)
+				
                 snapshotTask.setTaskCompleted(restoredDefaultState: true, estimatedSnapshotExpiration: Date.distantFuture, userInfo: nil)
             case let connectivityTask as WKWatchConnectivityRefreshBackgroundTask:
                 // Be sure to complete the connectivity task once you’re done.
@@ -55,4 +62,22 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
         }
     }
 
+}
+
+extension ExtensionDelegate: WCSessionDelegate {
+	func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+		NotificationCenter.default.post(name: .WCSessionActivationDidComplete, object: session, userInfo: ["activationState": activationState, "error": error as Any])
+	}
+	
+	func session(_ session: WCSession, didReceive file: WCSessionFile) {
+		NotificationCenter.default.post(name: .WCSessionDidReceiveFile, object: session, userInfo: ["file": file])
+	}
+	
+	func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+		NotificationCenter.default.post(name: .WCSessionDidReceiveMessage, object: session, userInfo: message)
+	}
+	
+	func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+		NotificationCenter.default.post(name: .WCSessionDidReceiveApplicationContext, object: session, userInfo: applicationContext)
+	}
 }

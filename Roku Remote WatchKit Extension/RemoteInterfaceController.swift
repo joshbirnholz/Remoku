@@ -22,7 +22,7 @@ extension Array {
 }
 
 class RemoteInterfaceController: WKInterfaceController {
-
+	
 	var device: RokuDevice?
 	
 	let volumeThreshold: Double = 0.1
@@ -53,10 +53,16 @@ class RemoteInterfaceController: WKInterfaceController {
 		}
 	}
 	
+	@IBOutlet var swipeButton: WKInterfaceButton!
+	@IBOutlet var buttonsGroup: WKInterfaceGroup!
+	
 	override func awake(withContext context: Any?) {
 		guard let device = context as? RokuDevice else { dismiss(); return }
 		
 		self.device = device
+		
+		updateRemote()
+		
 	}
 	
 	override func didAppear() {
@@ -65,6 +71,17 @@ class RemoteInterfaceController: WKInterfaceController {
 		if device.isTV {
 			crownSequencer.delegate = self
 			crownSequencer.focus()
+		}
+	}
+	
+	func updateRemote() {
+		switch RemoteStyle.savedRemoteStyle {
+		case .button:
+			buttonsGroup.setHidden(false)
+			swipeButton.setHidden(true)
+		case.swipe:
+			buttonsGroup.setHidden(true)
+			swipeButton.setHidden(false)
 		}
 	}
 	
@@ -87,29 +104,37 @@ class RemoteInterfaceController: WKInterfaceController {
 	
 	@IBAction func upGestureRecognized(_ sender: Any) {
 		device?.send(keypress: .Up)
+		WKInterfaceDevice.current().play(.click)
 	}
 	
 	@IBAction func downGestureRecognized(_ sender: Any) {
 		device?.send(keypress: .Down)
+		WKInterfaceDevice.current().play(.click)
 	}
 	
 	@IBAction func leftGestureRecognized(_ sender: Any) {
 		device?.send(keypress: .Left)
+		WKInterfaceDevice.current().play(.click)
 	}
 	
 	@IBAction func rightGestureRecognized(_ sender: Any) {
 		device?.send(keypress: .Right)
+		WKInterfaceDevice.current().play(.click)
 	}
 	
 	@IBAction func tapGestureRecognized(_ sender: Any) {
 		device?.send(keypress: .Select)
+		WKInterfaceDevice.current().play(.click)
 	}
+	
 	@IBAction func optionsMenuItemPressed() {
 		device?.send(keypress: .Info)
 	}
+	
 	@IBAction func powerMenuItemPressed() {
 		device?.send(keypress: .Power)
 	}
+	
 	@IBAction func muteButtonPressed() {
 		device?.send(keypress: .VolumeMute)
 	}

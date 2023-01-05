@@ -63,6 +63,15 @@ public enum KeyPress: RawRepresentable {
 	
 	case Lit(Character)
 	
+	public var isAvailableForTV: Bool {
+		switch self {
+		case .VolumeUp, .VolumeDown, .VolumeMute, .PowerOff, .PowerOn, .Power, .ChannelUp, .ChannelDown, .InputTuner, .InputHDMI1, .InputHDMI2, .InputHDMI3, .InputHDMI4, .InputAV1:
+			return true
+		default:
+			return false
+		}
+	}
+	
 	public var rawValue: String {
 		switch self {
 		case .Lit(let c):

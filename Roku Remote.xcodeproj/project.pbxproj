@@ -3,49 +3,69 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		09E3BACCB1B119BCEBE195A2 /* Pods_Roku_Remote_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D732705BEFCE79EDF2C18F /* Pods_Roku_Remote_WatchKit_App.framework */; };
 		0E9CB33EF81D93E768B01F10 /* Pods_RokuKit_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B63A63C9A2722A725FB847 /* Pods_RokuKit_Watch.framework */; };
-		541E6462216C1CA500AEA940 /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6455216C1B7D00AEA940 /* ISO8601DateFormatter.swift */; };
-		541E6463216C1CA500AEA940 /* XMLKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6448216C1B7C00AEA940 /* XMLKey.swift */; };
-		541E6464216C1CA500AEA940 /* XMLStackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644E216C1B7C00AEA940 /* XMLStackParser.swift */; };
-		541E6467216C1CAF00AEA940 /* DecodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6450216C1B7C00AEA940 /* DecodingErrorExtension.swift */; };
-		541E6468216C1CAF00AEA940 /* XMLUnkeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6451216C1B7C00AEA940 /* XMLUnkeyedDecodingContainer.swift */; };
-		541E6469216C1CAF00AEA940 /* XMLKeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6452216C1B7C00AEA940 /* XMLKeyedDecodingContainer.swift */; };
-		541E646A216C1CAF00AEA940 /* XMLDecodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6453216C1B7C00AEA940 /* XMLDecodingStorage.swift */; };
-		541E646B216C1CAF00AEA940 /* XMLDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6454216C1B7C00AEA940 /* XMLDecoder.swift */; };
-		541E646C216C1CB400AEA940 /* XMLReferencingEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644A216C1B7C00AEA940 /* XMLReferencingEncoder.swift */; };
-		541E646D216C1CB400AEA940 /* EncodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644B216C1B7C00AEA940 /* EncodingErrorExtension.swift */; };
-		541E646E216C1CB400AEA940 /* XMLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644C216C1B7C00AEA940 /* XMLEncoder.swift */; };
-		541E646F216C1CB400AEA940 /* XMLEncodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644D216C1B7C00AEA940 /* XMLEncodingStorage.swift */; };
+		540774822366134F00B48E66 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 54337A392364DF7A000FFEC2 /* Intents.intentdefinition */; };
+		540EC6162173014F0084374E /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540EC6152173014F0084374E /* SettingsTableViewController.swift */; };
 		541E6479216C1D4400AEA940 /* RokuKit_Watch.h in Headers */ = {isa = PBXBuildFile; fileRef = 541E6477216C1D4400AEA940 /* RokuKit_Watch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		541E647C216C1D4400AEA940 /* RokuKit_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E6475216C1D4300AEA940 /* RokuKit_Watch.framework */; };
 		541E647D216C1D4400AEA940 /* RokuKit_Watch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 541E6475216C1D4300AEA940 /* RokuKit_Watch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		541E648C216C1D5500AEA940 /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6455216C1B7D00AEA940 /* ISO8601DateFormatter.swift */; };
-		541E648D216C1D5500AEA940 /* XMLKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6448216C1B7C00AEA940 /* XMLKey.swift */; };
-		541E648E216C1D5500AEA940 /* XMLStackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644E216C1B7C00AEA940 /* XMLStackParser.swift */; };
 		541E6490216C1D5500AEA940 /* RokuDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDD0B7216C0D50004D3DF4 /* RokuDevice.swift */; };
 		541E6491216C1D5500AEA940 /* KeyPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDD092216BFF72004D3DF4 /* KeyPress.swift */; };
 		541E6493216C1D5700AEA940 /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DDD0BC216C0F66004D3DF4 /* XMLReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		541E6494216C1D5700AEA940 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DDD0BE216C0F6B004D3DF4 /* XMLReader.m */; };
-		541E6495216C1D5E00AEA940 /* DecodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6450216C1B7C00AEA940 /* DecodingErrorExtension.swift */; };
-		541E6496216C1D5E00AEA940 /* XMLUnkeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6451216C1B7C00AEA940 /* XMLUnkeyedDecodingContainer.swift */; };
-		541E6497216C1D5E00AEA940 /* XMLKeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6452216C1B7C00AEA940 /* XMLKeyedDecodingContainer.swift */; };
-		541E6498216C1D5E00AEA940 /* XMLDecodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6453216C1B7C00AEA940 /* XMLDecodingStorage.swift */; };
-		541E6499216C1D5E00AEA940 /* XMLDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E6454216C1B7C00AEA940 /* XMLDecoder.swift */; };
-		541E649A216C1DF300AEA940 /* XMLReferencingEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644A216C1B7C00AEA940 /* XMLReferencingEncoder.swift */; };
-		541E649B216C1DF300AEA940 /* EncodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644B216C1B7C00AEA940 /* EncodingErrorExtension.swift */; };
-		541E649C216C1DF300AEA940 /* XMLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644C216C1B7C00AEA940 /* XMLEncoder.swift */; };
-		541E649D216C1DF300AEA940 /* XMLEncodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E644D216C1B7C00AEA940 /* XMLEncodingStorage.swift */; };
 		541E64A1216D06DB00AEA940 /* AppChooserInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E64A0216D06DB00AEA940 /* AppChooserInterfaceController.swift */; };
 		541E64A3216D0D2800AEA940 /* RemoteInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E64A2216D0D2800AEA940 /* RemoteInterfaceController.swift */; };
 		5420D67F216F1C7E006B3F4B /* UserDefaults+Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5420D67E216F1C7E006B3F4B /* UserDefaults+Group.swift */; };
 		5420D680216F1C7E006B3F4B /* UserDefaults+Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5420D67E216F1C7E006B3F4B /* UserDefaults+Group.swift */; };
+		5421B72E236501B300402446 /* ShortcutsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5421B72D236501B300402446 /* ShortcutsTableViewController.swift */; };
 		54245FB6216E865300BF5C7D /* DeviceFinderInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54245FB5216E865300BF5C7D /* DeviceFinderInterfaceController.swift */; };
+		542A8AF72364EB1A009838B5 /* RokuKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DDD0AB216C0D2A004D3DF4 /* RokuKit.framework */; };
+		543379CF23641A64000FFEC2 /* ManualAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543379CE23641A64000FFEC2 /* ManualAddViewController.swift */; };
+		543379D22364C091000FFEC2 /* BigRoundIconButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 543379D02364C090000FFEC2 /* BigRoundIconButton.xib */; };
+		543379D32364C091000FFEC2 /* BigRoundIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543379D12364C090000FFEC2 /* BigRoundIconButton.swift */; };
+		543379D52364C481000FFEC2 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543379D42364C481000FFEC2 /* SplashViewController.swift */; };
+		54337A342364DF43000FFEC2 /* Roku Remote Intents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 54337A2D2364DF43000FFEC2 /* Roku Remote Intents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		54337A3A2364DF7A000FFEC2 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54337A382364DF7A000FFEC2 /* IntentHandler.swift */; };
+		544FDBC22174552B00762A1E /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544FDBC12174552B00762A1E /* NotificationNames.swift */; };
+		544FDBC32174554300762A1E /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544FDBC12174552B00762A1E /* NotificationNames.swift */; };
+		5498B038236251A300F20766 /* XMLStackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B02A236251A200F20766 /* XMLStackParser.swift */; };
+		5498B039236251A300F20766 /* XMLStackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B02A236251A200F20766 /* XMLStackParser.swift */; };
+		5498B03A236251A300F20766 /* XMLReferencingEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B02C236251A200F20766 /* XMLReferencingEncoder.swift */; };
+		5498B03B236251A300F20766 /* XMLReferencingEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B02C236251A200F20766 /* XMLReferencingEncoder.swift */; };
+		5498B03C236251A300F20766 /* EncodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B02D236251A200F20766 /* EncodingErrorExtension.swift */; };
+		5498B03D236251A300F20766 /* EncodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B02D236251A200F20766 /* EncodingErrorExtension.swift */; };
+		5498B03E236251A300F20766 /* XMLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B02E236251A200F20766 /* XMLEncoder.swift */; };
+		5498B03F236251A300F20766 /* XMLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B02E236251A200F20766 /* XMLEncoder.swift */; };
+		5498B040236251A300F20766 /* XMLEncodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B02F236251A200F20766 /* XMLEncodingStorage.swift */; };
+		5498B041236251A300F20766 /* XMLEncodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B02F236251A200F20766 /* XMLEncodingStorage.swift */; };
+		5498B042236251A300F20766 /* DecodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B031236251A200F20766 /* DecodingErrorExtension.swift */; };
+		5498B043236251A300F20766 /* DecodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B031236251A200F20766 /* DecodingErrorExtension.swift */; };
+		5498B044236251A300F20766 /* XMLUnkeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B032236251A200F20766 /* XMLUnkeyedDecodingContainer.swift */; };
+		5498B045236251A300F20766 /* XMLUnkeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B032236251A200F20766 /* XMLUnkeyedDecodingContainer.swift */; };
+		5498B046236251A300F20766 /* XMLKeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B033236251A200F20766 /* XMLKeyedDecodingContainer.swift */; };
+		5498B047236251A300F20766 /* XMLKeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B033236251A200F20766 /* XMLKeyedDecodingContainer.swift */; };
+		5498B048236251A300F20766 /* XMLDecodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B034236251A200F20766 /* XMLDecodingStorage.swift */; };
+		5498B049236251A300F20766 /* XMLDecodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B034236251A200F20766 /* XMLDecodingStorage.swift */; };
+		5498B04A236251A300F20766 /* XMLDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B035236251A200F20766 /* XMLDecoder.swift */; };
+		5498B04B236251A300F20766 /* XMLDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B035236251A200F20766 /* XMLDecoder.swift */; };
+		5498B04C236251A300F20766 /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B036236251A200F20766 /* ISO8601DateFormatter.swift */; };
+		5498B04D236251A300F20766 /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B036236251A200F20766 /* ISO8601DateFormatter.swift */; };
+		5498B04E236251A300F20766 /* XMLKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B037236251A200F20766 /* XMLKey.swift */; };
+		5498B04F236251A300F20766 /* XMLKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B037236251A200F20766 /* XMLKey.swift */; };
+		5498B0512362826B00F20766 /* NSUbiquitousKeyValueStore+ObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498B0502362826B00F20766 /* NSUbiquitousKeyValueStore+ObjectStore.swift */; };
 		549AF73D216EA046007FF860 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549AF73C216EA046007FF860 /* ViewController.swift */; };
+		549FF32021750836007142D9 /* RemoteStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549FF31F21750836007142D9 /* RemoteStyle.swift */; };
+		549FF32121750868007142D9 /* Stored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540EC6172173B28C0084374E /* Stored.swift */; };
+		549FF32221750868007142D9 /* PropertyListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544FDBBC217446EE00762A1E /* PropertyListType.swift */; };
+		549FF32321750868007142D9 /* UserDefaults+ObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544FDBB42174387D00762A1E /* UserDefaults+ObjectStore.swift */; };
+		549FF3252175087A007142D9 /* Stored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540EC6172173B28C0084374E /* Stored.swift */; };
+		549FF3262175087A007142D9 /* PropertyListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544FDBBC217446EE00762A1E /* PropertyListType.swift */; };
+		549FF3272175087A007142D9 /* UserDefaults+ObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544FDBB42174387D00762A1E /* UserDefaults+ObjectStore.swift */; };
 		54AF33B4216AF0B30039A548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF33B3216AF0B30039A548 /* AppDelegate.swift */; };
 		54AF33B9216AF0B30039A548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AF33B7216AF0B30039A548 /* Main.storyboard */; };
 		54AF33BB216AF0B40039A548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AF33BA216AF0B40039A548 /* Assets.xcassets */; };
@@ -58,6 +78,10 @@
 		54AF33D9216AF0B50039A548 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF33D8216AF0B50039A548 /* ExtensionDelegate.swift */; };
 		54AF33DB216AF0B50039A548 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF33DA216AF0B50039A548 /* ComplicationController.swift */; };
 		54AF33DD216AF0B60039A548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AF33DC216AF0B60039A548 /* Assets.xcassets */; };
+		54C0B0C923629C0500DFD370 /* RokuDeviceDiscoverer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C0B0C823629C0500DFD370 /* RokuDeviceDiscoverer.swift */; };
+		54C0B0D32362A65D00DFD370 /* call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C0B0D22362A65D00DFD370 /* call.swift */; };
+		54C0B0D42362A65D00DFD370 /* call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C0B0D22362A65D00DFD370 /* call.swift */; };
+		54D5BC68217AD87B00127EFC /* RemoteStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549FF31F21750836007142D9 /* RemoteStyle.swift */; };
 		54DDD0AF216C0D2A004D3DF4 /* RokuKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DDD0AD216C0D2A004D3DF4 /* RokuKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54DDD0B2216C0D2A004D3DF4 /* RokuKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DDD0AB216C0D2A004D3DF4 /* RokuKit.framework */; };
 		54DDD0B3216C0D2A004D3DF4 /* RokuKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54DDD0AB216C0D2A004D3DF4 /* RokuKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -65,9 +89,12 @@
 		54DDD0BD216C0F66004D3DF4 /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DDD0BC216C0F66004D3DF4 /* XMLReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54DDD0BF216C0F6C004D3DF4 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DDD0BE216C0F6B004D3DF4 /* XMLReader.m */; };
 		54DDD0C1216C16F5004D3DF4 /* KeyPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDD092216BFF72004D3DF4 /* KeyPress.swift */; };
+		54E7C1502364DFF600A68FCF /* call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C0B0D22362A65D00DFD370 /* call.swift */; };
+		54E7C1512364E1B800A68FCF /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 54337A392364DF7A000FFEC2 /* Intents.intentdefinition */; };
+		54E7C1522364E4D800A68FCF /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 54337A392364DF7A000FFEC2 /* Intents.intentdefinition */; };
 		5A660132A9A5E71C2856A946 /* Pods_Roku_Remote_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C67CE6C3296FEE70369C414 /* Pods_Roku_Remote_WatchKit_Extension.framework */; };
 		6C6E2B95F45E3059475CCE60 /* Pods_RokuKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB992A46B13CB7E115F8CFF /* Pods_RokuKit.framework */; };
-		8A05F97AF637415CC40FB387 /* Pods_Roku_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED84C682F90401FDE577423D /* Pods_Roku_Remote.framework */; };
+		8A05F97AF637415CC40FB387 /* Pods_Roku_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED84C682F90401FDE577423D /* Pods_Roku_Remote.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +104,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 541E6474216C1D4300AEA940;
 			remoteInfo = RokuKit_Watch;
+		};
+		542A8AF42364E8F0009838B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54AF33A8216AF0B30039A548 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54DDD0AA216C0D2A004D3DF4;
+			remoteInfo = RokuKit;
+		};
+		54337A322364DF43000FFEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54AF33A8216AF0B30039A548 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54337A2C2364DF43000FFEC2;
+			remoteInfo = "Roku Remote Intents";
 		};
 		54AF33C4216AF0B40039A548 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -111,6 +152,27 @@
 				541E647D216C1D4400AEA940 /* RokuKit_Watch.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542A8AF92364EB1A009838B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543379F92364CF26000FFEC2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				54337A342364DF43000FFEC2 /* Roku Remote Intents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		54AF33E4216AF0B60039A548 /* Embed App Extensions */ = {
@@ -152,18 +214,9 @@
 		03E4C9349ECE89037DCDD2C6 /* Pods-Roku Remote WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roku Remote WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roku Remote WatchKit App/Pods-Roku Remote WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		0F68B9AA44FA99BAD900888D /* Pods-Roku Remote WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roku Remote WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Roku Remote WatchKit Extension/Pods-Roku Remote WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		2EBE748DA2143B29903AAB09 /* Pods-RokuKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RokuKit/Pods-RokuKit.debug.xcconfig"; sourceTree = "<group>"; };
-		541E6448216C1B7C00AEA940 /* XMLKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLKey.swift; sourceTree = "<group>"; };
-		541E644A216C1B7C00AEA940 /* XMLReferencingEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLReferencingEncoder.swift; sourceTree = "<group>"; };
-		541E644B216C1B7C00AEA940 /* EncodingErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingErrorExtension.swift; sourceTree = "<group>"; };
-		541E644C216C1B7C00AEA940 /* XMLEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLEncoder.swift; sourceTree = "<group>"; };
-		541E644D216C1B7C00AEA940 /* XMLEncodingStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLEncodingStorage.swift; sourceTree = "<group>"; };
-		541E644E216C1B7C00AEA940 /* XMLStackParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLStackParser.swift; sourceTree = "<group>"; };
-		541E6450216C1B7C00AEA940 /* DecodingErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingErrorExtension.swift; sourceTree = "<group>"; };
-		541E6451216C1B7C00AEA940 /* XMLUnkeyedDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLUnkeyedDecodingContainer.swift; sourceTree = "<group>"; };
-		541E6452216C1B7C00AEA940 /* XMLKeyedDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLKeyedDecodingContainer.swift; sourceTree = "<group>"; };
-		541E6453216C1B7C00AEA940 /* XMLDecodingStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLDecodingStorage.swift; sourceTree = "<group>"; };
-		541E6454216C1B7C00AEA940 /* XMLDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLDecoder.swift; sourceTree = "<group>"; };
-		541E6455216C1B7D00AEA940 /* ISO8601DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO8601DateFormatter.swift; sourceTree = "<group>"; };
+		540EC6152173014F0084374E /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		540EC6172173B28C0084374E /* Stored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stored.swift; sourceTree = "<group>"; };
+		541302462365120600342412 /* Roku Remote Intents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Roku Remote Intents.entitlements"; sourceTree = "<group>"; };
 		541E6475216C1D4300AEA940 /* RokuKit_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RokuKit_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		541E6477216C1D4400AEA940 /* RokuKit_Watch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RokuKit_Watch.h; sourceTree = "<group>"; };
 		541E6478216C1D4400AEA940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -173,9 +226,37 @@
 		5420D67C216F15A1006B3F4B /* Roku Remote WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Roku Remote WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		5420D67D216F17A0006B3F4B /* Roku Remote WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Roku Remote WatchKit App.entitlements"; sourceTree = "<group>"; };
 		5420D67E216F1C7E006B3F4B /* UserDefaults+Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Group.swift"; sourceTree = "<group>"; };
+		5421B72D236501B300402446 /* ShortcutsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsTableViewController.swift; sourceTree = "<group>"; };
 		54245FAE216E740500BF5C7D /* Roku Remote WatchKit Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Roku Remote WatchKit Extension-Bridging-Header.h"; sourceTree = "<group>"; };
 		54245FB5216E865300BF5C7D /* DeviceFinderInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderInterfaceController.swift; sourceTree = "<group>"; };
+		543379CE23641A64000FFEC2 /* ManualAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualAddViewController.swift; sourceTree = "<group>"; };
+		543379D02364C090000FFEC2 /* BigRoundIconButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BigRoundIconButton.xib; sourceTree = "<group>"; };
+		543379D12364C090000FFEC2 /* BigRoundIconButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigRoundIconButton.swift; sourceTree = "<group>"; };
+		543379D42364C481000FFEC2 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		543379E42364CF26000FFEC2 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		54337A052364DDEA000FFEC2 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		54337A2D2364DF43000FFEC2 /* Roku Remote Intents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Roku Remote Intents.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54337A312364DF43000FFEC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54337A382364DF7A000FFEC2 /* IntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		54337A392364DF7A000FFEC2 /* Intents.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		544FDBB42174387D00762A1E /* UserDefaults+ObjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+ObjectStore.swift"; sourceTree = "<group>"; };
+		544FDBBC217446EE00762A1E /* PropertyListType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListType.swift; sourceTree = "<group>"; };
+		544FDBC12174552B00762A1E /* NotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
+		5498B02A236251A200F20766 /* XMLStackParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLStackParser.swift; sourceTree = "<group>"; };
+		5498B02C236251A200F20766 /* XMLReferencingEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLReferencingEncoder.swift; sourceTree = "<group>"; };
+		5498B02D236251A200F20766 /* EncodingErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingErrorExtension.swift; sourceTree = "<group>"; };
+		5498B02E236251A200F20766 /* XMLEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLEncoder.swift; sourceTree = "<group>"; };
+		5498B02F236251A200F20766 /* XMLEncodingStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLEncodingStorage.swift; sourceTree = "<group>"; };
+		5498B031236251A200F20766 /* DecodingErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingErrorExtension.swift; sourceTree = "<group>"; };
+		5498B032236251A200F20766 /* XMLUnkeyedDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLUnkeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		5498B033236251A200F20766 /* XMLKeyedDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLKeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		5498B034236251A200F20766 /* XMLDecodingStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLDecodingStorage.swift; sourceTree = "<group>"; };
+		5498B035236251A200F20766 /* XMLDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLDecoder.swift; sourceTree = "<group>"; };
+		5498B036236251A200F20766 /* ISO8601DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO8601DateFormatter.swift; sourceTree = "<group>"; };
+		5498B037236251A200F20766 /* XMLKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLKey.swift; sourceTree = "<group>"; };
+		5498B0502362826B00F20766 /* NSUbiquitousKeyValueStore+ObjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSUbiquitousKeyValueStore+ObjectStore.swift"; sourceTree = "<group>"; };
 		549AF73C216EA046007FF860 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		549FF31F21750836007142D9 /* RemoteStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteStyle.swift; sourceTree = "<group>"; };
 		54AF33B0216AF0B30039A548 /* Roku Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roku Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AF33B3216AF0B30039A548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54AF33B8216AF0B30039A548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -192,6 +273,8 @@
 		54AF33DA216AF0B50039A548 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		54AF33DC216AF0B60039A548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54AF33DE216AF0B60039A548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54C0B0C823629C0500DFD370 /* RokuDeviceDiscoverer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RokuDeviceDiscoverer.swift; sourceTree = "<group>"; };
+		54C0B0D22362A65D00DFD370 /* call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = call.swift; sourceTree = "<group>"; };
 		54DDD092216BFF72004D3DF4 /* KeyPress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPress.swift; sourceTree = "<group>"; };
 		54DDD0AB216C0D2A004D3DF4 /* RokuKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RokuKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DDD0AD216C0D2A004D3DF4 /* RokuKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RokuKit.h; sourceTree = "<group>"; };
@@ -219,6 +302,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E9CB33EF81D93E768B01F10 /* Pods_RokuKit_Watch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54337A2A2364DF43000FFEC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542A8AF72364EB1A009838B5 /* RokuKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,41 +350,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		541E643D216C1B6D00AEA940 /* XMLParsing */ = {
-			isa = PBXGroup;
-			children = (
-				541E644F216C1B7C00AEA940 /* Decoder */,
-				541E6449216C1B7C00AEA940 /* Encoder */,
-				541E6455216C1B7D00AEA940 /* ISO8601DateFormatter.swift */,
-				541E6448216C1B7C00AEA940 /* XMLKey.swift */,
-				541E644E216C1B7C00AEA940 /* XMLStackParser.swift */,
-			);
-			path = XMLParsing;
-			sourceTree = "<group>";
-		};
-		541E6449216C1B7C00AEA940 /* Encoder */ = {
-			isa = PBXGroup;
-			children = (
-				541E644A216C1B7C00AEA940 /* XMLReferencingEncoder.swift */,
-				541E644B216C1B7C00AEA940 /* EncodingErrorExtension.swift */,
-				541E644C216C1B7C00AEA940 /* XMLEncoder.swift */,
-				541E644D216C1B7C00AEA940 /* XMLEncodingStorage.swift */,
-			);
-			path = Encoder;
-			sourceTree = "<group>";
-		};
-		541E644F216C1B7C00AEA940 /* Decoder */ = {
-			isa = PBXGroup;
-			children = (
-				541E6450216C1B7C00AEA940 /* DecodingErrorExtension.swift */,
-				541E6451216C1B7C00AEA940 /* XMLUnkeyedDecodingContainer.swift */,
-				541E6452216C1B7C00AEA940 /* XMLKeyedDecodingContainer.swift */,
-				541E6453216C1B7C00AEA940 /* XMLDecodingStorage.swift */,
-				541E6454216C1B7C00AEA940 /* XMLDecoder.swift */,
-			);
-			path = Decoder;
-			sourceTree = "<group>";
-		};
 		541E6476216C1D4400AEA940 /* RokuKit_Watch */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +357,63 @@
 				541E6478216C1D4400AEA940 /* Info.plist */,
 			);
 			path = RokuKit_Watch;
+			sourceTree = "<group>";
+		};
+		54337A2E2364DF43000FFEC2 /* Roku Remote Intents */ = {
+			isa = PBXGroup;
+			children = (
+				541302462365120600342412 /* Roku Remote Intents.entitlements */,
+				54337A382364DF7A000FFEC2 /* IntentHandler.swift */,
+				54337A392364DF7A000FFEC2 /* Intents.intentdefinition */,
+				54337A312364DF43000FFEC2 /* Info.plist */,
+			);
+			path = "Roku Remote Intents";
+			sourceTree = "<group>";
+		};
+		544FDBB32174385500762A1E /* Storable */ = {
+			isa = PBXGroup;
+			children = (
+				540EC6172173B28C0084374E /* Stored.swift */,
+				544FDBBC217446EE00762A1E /* PropertyListType.swift */,
+				544FDBB42174387D00762A1E /* UserDefaults+ObjectStore.swift */,
+				5498B0502362826B00F20766 /* NSUbiquitousKeyValueStore+ObjectStore.swift */,
+			);
+			path = Storable;
+			sourceTree = "<group>";
+		};
+		5498B029236251A200F20766 /* XMLParsing */ = {
+			isa = PBXGroup;
+			children = (
+				5498B02A236251A200F20766 /* XMLStackParser.swift */,
+				5498B02B236251A200F20766 /* Encoder */,
+				5498B030236251A200F20766 /* Decoder */,
+				5498B036236251A200F20766 /* ISO8601DateFormatter.swift */,
+				5498B037236251A200F20766 /* XMLKey.swift */,
+			);
+			path = XMLParsing;
+			sourceTree = SOURCE_ROOT;
+		};
+		5498B02B236251A200F20766 /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				5498B02C236251A200F20766 /* XMLReferencingEncoder.swift */,
+				5498B02D236251A200F20766 /* EncodingErrorExtension.swift */,
+				5498B02E236251A200F20766 /* XMLEncoder.swift */,
+				5498B02F236251A200F20766 /* XMLEncodingStorage.swift */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		5498B030236251A200F20766 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				5498B031236251A200F20766 /* DecodingErrorExtension.swift */,
+				5498B032236251A200F20766 /* XMLUnkeyedDecodingContainer.swift */,
+				5498B033236251A200F20766 /* XMLKeyedDecodingContainer.swift */,
+				5498B034236251A200F20766 /* XMLDecodingStorage.swift */,
+				5498B035236251A200F20766 /* XMLDecoder.swift */,
+			);
+			path = Decoder;
 			sourceTree = "<group>";
 		};
 		54AF33A7216AF0B30039A548 = {
@@ -311,6 +424,7 @@
 				54AF33D5216AF0B50039A548 /* Roku Remote WatchKit Extension */,
 				54DDD0AC216C0D2A004D3DF4 /* RokuKit */,
 				541E6476216C1D4400AEA940 /* RokuKit_Watch */,
+				54337A2E2364DF43000FFEC2 /* Roku Remote Intents */,
 				54AF33B1216AF0B30039A548 /* Products */,
 				D86C09E47DC090B3A84E5710 /* Pods */,
 				5ED36D17B3C08FF530220B66 /* Frameworks */,
@@ -325,6 +439,7 @@
 				54AF33D1216AF0B50039A548 /* Roku Remote WatchKit Extension.appex */,
 				54DDD0AB216C0D2A004D3DF4 /* RokuKit.framework */,
 				541E6475216C1D4300AEA940 /* RokuKit_Watch.framework */,
+				54337A2D2364DF43000FFEC2 /* Roku Remote Intents.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -334,11 +449,18 @@
 			children = (
 				5420D67B216F158E006B3F4B /* Roku Remote.entitlements */,
 				54AF33B3216AF0B30039A548 /* AppDelegate.swift */,
-				549AF73C216EA046007FF860 /* ViewController.swift */,
 				54AF33B7216AF0B30039A548 /* Main.storyboard */,
+				543379D42364C481000FFEC2 /* SplashViewController.swift */,
+				5421B72D236501B300402446 /* ShortcutsTableViewController.swift */,
+				549AF73C216EA046007FF860 /* ViewController.swift */,
+				540EC6152173014F0084374E /* SettingsTableViewController.swift */,
+				543379CE23641A64000FFEC2 /* ManualAddViewController.swift */,
+				543379D12364C090000FFEC2 /* BigRoundIconButton.swift */,
+				543379D02364C090000FFEC2 /* BigRoundIconButton.xib */,
 				54AF33BA216AF0B40039A548 /* Assets.xcassets */,
 				54AF33BC216AF0B40039A548 /* LaunchScreen.storyboard */,
 				54AF33BF216AF0B40039A548 /* Info.plist */,
+				544FDBC12174552B00762A1E /* NotificationNames.swift */,
 			);
 			path = "Roku Remote";
 			sourceTree = "<group>";
@@ -374,14 +496,18 @@
 		54DDD0AC216C0D2A004D3DF4 /* RokuKit */ = {
 			isa = PBXGroup;
 			children = (
-				541E643D216C1B6D00AEA940 /* XMLParsing */,
+				5498B029236251A200F20766 /* XMLParsing */,
 				54DDD0B7216C0D50004D3DF4 /* RokuDevice.swift */,
+				54C0B0C823629C0500DFD370 /* RokuDeviceDiscoverer.swift */,
+				54C0B0D22362A65D00DFD370 /* call.swift */,
 				54DDD092216BFF72004D3DF4 /* KeyPress.swift */,
 				54DDD0AD216C0D2A004D3DF4 /* RokuKit.h */,
 				54DDD0AE216C0D2A004D3DF4 /* Info.plist */,
 				5420D67E216F1C7E006B3F4B /* UserDefaults+Group.swift */,
 				54DDD0BC216C0F66004D3DF4 /* XMLReader.h */,
 				54DDD0BE216C0F6B004D3DF4 /* XMLReader.m */,
+				544FDBB32174385500762A1E /* Storable */,
+				549FF31F21750836007142D9 /* RemoteStyle.swift */,
 			);
 			path = RokuKit;
 			sourceTree = "<group>";
@@ -389,11 +515,13 @@
 		5ED36D17B3C08FF530220B66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54337A052364DDEA000FFEC2 /* Intents.framework */,
 				ED84C682F90401FDE577423D /* Pods_Roku_Remote.framework */,
 				E5D732705BEFCE79EDF2C18F /* Pods_Roku_Remote_WatchKit_App.framework */,
 				7C67CE6C3296FEE70369C414 /* Pods_Roku_Remote_WatchKit_Extension.framework */,
 				DEB992A46B13CB7E115F8CFF /* Pods_RokuKit.framework */,
 				F8B63A63C9A2722A725FB847 /* Pods_RokuKit_Watch.framework */,
+				543379E42364CF26000FFEC2 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -458,6 +586,25 @@
 			productReference = 541E6475216C1D4300AEA940 /* RokuKit_Watch.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		54337A2C2364DF43000FFEC2 /* Roku Remote Intents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54337A352364DF43000FFEC2 /* Build configuration list for PBXNativeTarget "Roku Remote Intents" */;
+			buildPhases = (
+				54337A292364DF43000FFEC2 /* Sources */,
+				54337A2A2364DF43000FFEC2 /* Frameworks */,
+				54337A2B2364DF43000FFEC2 /* Resources */,
+				542A8AF92364EB1A009838B5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				542A8AF52364E8F0009838B5 /* PBXTargetDependency */,
+			);
+			name = "Roku Remote Intents";
+			productName = "Roku Remote Intents";
+			productReference = 54337A2D2364DF43000FFEC2 /* Roku Remote Intents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		54AF33AF216AF0B30039A548 /* Roku Remote */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54AF33E9216AF0B60039A548 /* Build configuration list for PBXNativeTarget "Roku Remote" */;
@@ -468,13 +615,15 @@
 				54AF33AE216AF0B30039A548 /* Resources */,
 				54AF33E8216AF0B60039A548 /* Embed Watch Content */,
 				54AF341B216AF3390039A548 /* Embed Frameworks */,
-				C6CDEDD97A44618D55DE53A4 /* [CP] Embed Pods Frameworks */,
+				94D7885B93CC4EC67105FE91 /* [CP] Embed Pods Frameworks */,
+				543379F92364CF26000FFEC2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				54AF33C5216AF0B40039A548 /* PBXTargetDependency */,
 				54DDD0B1216C0D2A004D3DF4 /* PBXTargetDependency */,
+				54337A332364DF43000FFEC2 /* PBXTargetDependency */,
 			);
 			name = "Roku Remote";
 			productName = "Roku Remote";
@@ -546,16 +695,21 @@
 		54AF33A8216AF0B30039A548 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Josh Birnholz";
 				TargetAttributes = {
 					541E6474216C1D4300AEA940 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1110;
+					};
+					54337A2C2364DF43000FFEC2 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					54AF33AF216AF0B30039A548 = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1110;
 						SystemCapabilities = {
 							com.apple.AccessWiFi = {
 								enabled = 1;
@@ -575,7 +729,7 @@
 					};
 					54AF33D0216AF0B50039A548 = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1110;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -584,7 +738,7 @@
 					};
 					54DDD0AA216C0D2A004D3DF4 = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -606,6 +760,7 @@
 				54AF33D0216AF0B50039A548 /* Roku Remote WatchKit Extension */,
 				54DDD0AA216C0D2A004D3DF4 /* RokuKit */,
 				541E6474216C1D4300AEA940 /* RokuKit_Watch */,
+				54337A2C2364DF43000FFEC2 /* Roku Remote Intents */,
 			);
 		};
 /* End PBXProject section */
@@ -618,12 +773,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54337A2B2364DF43000FFEC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54AF33AE216AF0B30039A548 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				54AF33BE216AF0B40039A548 /* LaunchScreen.storyboard in Resources */,
 				54AF33BB216AF0B40039A548 /* Assets.xcassets in Resources */,
+				543379D22364C091000FFEC2 /* BigRoundIconButton.xib in Resources */,
 				54AF33B9216AF0B30039A548 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -714,35 +877,33 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Roku Remote WatchKit Extension/Pods-Roku Remote WatchKit Extension-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DeepDiff/DeepDiff.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Roku Remote WatchKit Extension/Pods-Roku Remote WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeepDiff.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Roku Remote WatchKit Extension/Pods-Roku Remote WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roku Remote WatchKit Extension/Pods-Roku Remote WatchKit Extension-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Roku Remote WatchKit Extension/Pods-Roku Remote WatchKit Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C6CDEDD97A44618D55DE53A4 /* [CP] Embed Pods Frameworks */ = {
+		94D7885B93CC4EC67105FE91 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Roku Remote/Pods-Roku Remote-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Roku Remote/Pods-Roku Remote-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Roku Remote/Pods-Roku Remote-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roku Remote/Pods-Roku Remote-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Roku Remote/Pods-Roku Remote-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D3630967C1F70EE1842507BB /* [CP] Check Pods Manifest.lock */ = {
@@ -789,21 +950,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				541E6490216C1D5500AEA940 /* RokuDevice.swift in Sources */,
+				5498B04D236251A300F20766 /* ISO8601DateFormatter.swift in Sources */,
 				541E6491216C1D5500AEA940 /* KeyPress.swift in Sources */,
+				5498B04B236251A300F20766 /* XMLDecoder.swift in Sources */,
+				5498B03B236251A300F20766 /* XMLReferencingEncoder.swift in Sources */,
 				5420D680216F1C7E006B3F4B /* UserDefaults+Group.swift in Sources */,
-				541E648C216C1D5500AEA940 /* ISO8601DateFormatter.swift in Sources */,
-				541E649A216C1DF300AEA940 /* XMLReferencingEncoder.swift in Sources */,
-				541E648E216C1D5500AEA940 /* XMLStackParser.swift in Sources */,
-				541E6498216C1D5E00AEA940 /* XMLDecodingStorage.swift in Sources */,
-				541E649B216C1DF300AEA940 /* EncodingErrorExtension.swift in Sources */,
-				541E6495216C1D5E00AEA940 /* DecodingErrorExtension.swift in Sources */,
+				5498B03D236251A300F20766 /* EncodingErrorExtension.swift in Sources */,
+				5498B045236251A300F20766 /* XMLUnkeyedDecodingContainer.swift in Sources */,
+				549FF3272175087A007142D9 /* UserDefaults+ObjectStore.swift in Sources */,
+				5498B047236251A300F20766 /* XMLKeyedDecodingContainer.swift in Sources */,
+				54C0B0D42362A65D00DFD370 /* call.swift in Sources */,
+				5498B039236251A300F20766 /* XMLStackParser.swift in Sources */,
+				5498B04F236251A300F20766 /* XMLKey.swift in Sources */,
+				5498B049236251A300F20766 /* XMLDecodingStorage.swift in Sources */,
+				549FF3262175087A007142D9 /* PropertyListType.swift in Sources */,
+				5498B03F236251A300F20766 /* XMLEncoder.swift in Sources */,
+				5498B043236251A300F20766 /* DecodingErrorExtension.swift in Sources */,
 				541E6494216C1D5700AEA940 /* XMLReader.m in Sources */,
-				541E649D216C1DF300AEA940 /* XMLEncodingStorage.swift in Sources */,
-				541E6496216C1D5E00AEA940 /* XMLUnkeyedDecodingContainer.swift in Sources */,
-				541E649C216C1DF300AEA940 /* XMLEncoder.swift in Sources */,
-				541E6497216C1D5E00AEA940 /* XMLKeyedDecodingContainer.swift in Sources */,
-				541E648D216C1D5500AEA940 /* XMLKey.swift in Sources */,
-				541E6499216C1D5E00AEA940 /* XMLDecoder.swift in Sources */,
+				549FF3252175087A007142D9 /* Stored.swift in Sources */,
+				5498B041236251A300F20766 /* XMLEncodingStorage.swift in Sources */,
+				54D5BC68217AD87B00127EFC /* RemoteStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54337A292364DF43000FFEC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E7C1512364E1B800A68FCF /* Intents.intentdefinition in Sources */,
+				54337A3A2364DF7A000FFEC2 /* IntentHandler.swift in Sources */,
+				54E7C1502364DFF600A68FCF /* call.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,7 +988,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				549AF73D216EA046007FF860 /* ViewController.swift in Sources */,
+				544FDBC22174552B00762A1E /* NotificationNames.swift in Sources */,
+				5421B72E236501B300402446 /* ShortcutsTableViewController.swift in Sources */,
+				543379D32364C091000FFEC2 /* BigRoundIconButton.swift in Sources */,
 				54AF33B4216AF0B30039A548 /* AppDelegate.swift in Sources */,
+				543379CF23641A64000FFEC2 /* ManualAddViewController.swift in Sources */,
+				543379D52364C481000FFEC2 /* SplashViewController.swift in Sources */,
+				54E7C1522364E4D800A68FCF /* Intents.intentdefinition in Sources */,
+				540EC6162173014F0084374E /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -821,10 +1004,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				54AF33D9216AF0B50039A548 /* ExtensionDelegate.swift in Sources */,
+				544FDBC32174554300762A1E /* NotificationNames.swift in Sources */,
 				541E64A3216D0D2800AEA940 /* RemoteInterfaceController.swift in Sources */,
 				54AF33D7216AF0B50039A548 /* InterfaceController.swift in Sources */,
 				54AF33DB216AF0B50039A548 /* ComplicationController.swift in Sources */,
 				54245FB6216E865300BF5C7D /* DeviceFinderInterfaceController.swift in Sources */,
+				540774822366134F00B48E66 /* Intents.intentdefinition in Sources */,
 				541E64A1216D06DB00AEA940 /* AppChooserInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -833,22 +1018,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5498B0512362826B00F20766 /* NSUbiquitousKeyValueStore+ObjectStore.swift in Sources */,
 				54DDD0BF216C0F6C004D3DF4 /* XMLReader.m in Sources */,
-				541E6464216C1CA500AEA940 /* XMLStackParser.swift in Sources */,
+				5498B04C236251A300F20766 /* ISO8601DateFormatter.swift in Sources */,
 				5420D67F216F1C7E006B3F4B /* UserDefaults+Group.swift in Sources */,
-				541E6462216C1CA500AEA940 /* ISO8601DateFormatter.swift in Sources */,
-				541E646C216C1CB400AEA940 /* XMLReferencingEncoder.swift in Sources */,
-				541E6463216C1CA500AEA940 /* XMLKey.swift in Sources */,
-				541E646A216C1CAF00AEA940 /* XMLDecodingStorage.swift in Sources */,
-				541E646D216C1CB400AEA940 /* EncodingErrorExtension.swift in Sources */,
-				541E6467216C1CAF00AEA940 /* DecodingErrorExtension.swift in Sources */,
+				5498B04A236251A300F20766 /* XMLDecoder.swift in Sources */,
+				5498B03A236251A300F20766 /* XMLReferencingEncoder.swift in Sources */,
+				549FF32021750836007142D9 /* RemoteStyle.swift in Sources */,
+				549FF32121750868007142D9 /* Stored.swift in Sources */,
+				5498B03C236251A300F20766 /* EncodingErrorExtension.swift in Sources */,
+				5498B044236251A300F20766 /* XMLUnkeyedDecodingContainer.swift in Sources */,
+				549FF32321750868007142D9 /* UserDefaults+ObjectStore.swift in Sources */,
+				5498B046236251A300F20766 /* XMLKeyedDecodingContainer.swift in Sources */,
+				5498B038236251A300F20766 /* XMLStackParser.swift in Sources */,
+				5498B04E236251A300F20766 /* XMLKey.swift in Sources */,
+				5498B048236251A300F20766 /* XMLDecodingStorage.swift in Sources */,
 				54DDD0B8216C0D50004D3DF4 /* RokuDevice.swift in Sources */,
-				541E646F216C1CB400AEA940 /* XMLEncodingStorage.swift in Sources */,
-				541E6468216C1CAF00AEA940 /* XMLUnkeyedDecodingContainer.swift in Sources */,
-				541E646E216C1CB400AEA940 /* XMLEncoder.swift in Sources */,
-				541E6469216C1CAF00AEA940 /* XMLKeyedDecodingContainer.swift in Sources */,
+				5498B03E236251A300F20766 /* XMLEncoder.swift in Sources */,
+				5498B042236251A300F20766 /* DecodingErrorExtension.swift in Sources */,
+				549FF32221750868007142D9 /* PropertyListType.swift in Sources */,
 				54DDD0C1216C16F5004D3DF4 /* KeyPress.swift in Sources */,
-				541E646B216C1CAF00AEA940 /* XMLDecoder.swift in Sources */,
+				54C0B0C923629C0500DFD370 /* RokuDeviceDiscoverer.swift in Sources */,
+				5498B040236251A300F20766 /* XMLEncodingStorage.swift in Sources */,
+				54C0B0D32362A65D00DFD370 /* call.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -859,6 +1051,16 @@
 			isa = PBXTargetDependency;
 			target = 541E6474216C1D4300AEA940 /* RokuKit_Watch */;
 			targetProxy = 541E647A216C1D4400AEA940 /* PBXContainerItemProxy */;
+		};
+		542A8AF52364E8F0009838B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54DDD0AA216C0D2A004D3DF4 /* RokuKit */;
+			targetProxy = 542A8AF42364E8F0009838B5 /* PBXContainerItemProxy */;
+		};
+		54337A332364DF43000FFEC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54337A2C2364DF43000FFEC2 /* Roku Remote Intents */;
+			targetProxy = 54337A322364DF43000FFEC2 /* PBXContainerItemProxy */;
 		};
 		54AF33C5216AF0B40039A548 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -912,7 +1114,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = CB7D3XVLP3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -929,7 +1131,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -944,7 +1146,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = CB7D3XVLP3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -961,11 +1163,58 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		54337A362364DF43000FFEC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Roku Remote Intents/Roku Remote Intents.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = CB7D3XVLP3;
+				INFOPLIST_FILE = "Roku Remote Intents/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.josh.birnholz.Roku-Remote.Roku-Remote-Intents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54337A372364DF43000FFEC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Roku Remote Intents/Roku Remote Intents.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = CB7D3XVLP3;
+				INFOPLIST_FILE = "Roku Remote Intents/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.josh.birnholz.Roku-Remote.Roku-Remote-Intents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1093,6 +1342,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Roku Remote WatchKit Extension/Roku Remote WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = CB7D3XVLP3;
 				INFOPLIST_FILE = "Roku Remote WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1106,7 +1356,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Roku Remote WatchKit Extension/Roku Remote WatchKit Extension-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4;
 			};
@@ -1120,6 +1370,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Roku Remote WatchKit Extension/Roku Remote WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = CB7D3XVLP3;
 				INFOPLIST_FILE = "Roku Remote WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1132,7 +1383,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Roku Remote WatchKit Extension/Roku Remote WatchKit Extension-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4;
 			};
@@ -1146,6 +1397,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Roku Remote WatchKit App/Roku Remote WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = CB7D3XVLP3;
 				IBSC_MODULE = Roku_Remote_WatchKit_Extension;
 				INFOPLIST_FILE = "Roku Remote WatchKit App/Info.plist";
@@ -1167,6 +1419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Roku Remote WatchKit App/Roku Remote WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = CB7D3XVLP3;
 				IBSC_MODULE = Roku_Remote_WatchKit_Extension;
 				INFOPLIST_FILE = "Roku Remote WatchKit App/Info.plist";
@@ -1189,9 +1442,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Roku Remote/Roku Remote.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = CB7D3XVLP3;
 				INFOPLIST_FILE = "Roku Remote/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1199,7 +1453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josh.birnholz.Roku-Remote";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1213,16 +1467,17 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Roku Remote/Roku Remote.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = CB7D3XVLP3;
 				INFOPLIST_FILE = "Roku Remote/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josh.birnholz.Roku-Remote";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -1234,7 +1489,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = CB7D3XVLP3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1252,7 +1507,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1266,7 +1521,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = CB7D3XVLP3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1283,7 +1538,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.josh.birnholz.RokuKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1298,6 +1553,15 @@
 			buildConfigurations = (
 				541E647F216C1D4400AEA940 /* Debug */,
 				541E6480216C1D4400AEA940 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54337A352364DF43000FFEC2 /* Build configuration list for PBXNativeTarget "Roku Remote Intents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54337A362364DF43000FFEC2 /* Debug */,
+				54337A372364DF43000FFEC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

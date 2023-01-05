@@ -19,9 +19,21 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>6</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>shortcuts</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>LaunchAppIntent</string>
+		<string>PlayPauseIntent</string>
+		<string>PowerOnOffIntent</string>
+		<string>PressButtonIntent</string>
+		<string>TypeTextIntent</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

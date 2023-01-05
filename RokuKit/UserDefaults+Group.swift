@@ -9,9 +9,9 @@
 import Foundation
 
 public extension UserDefaults {
-	
-	static var group: UserDefaults {
-		return UserDefaults(suiteName: "group.com.josh.birnholz.Roku-Remote")!
-	}
-	
+	static let group = UserDefaults(suiteName: "group.com.josh.birnholz.Roku-Remote")!
+}
+
+public struct Global {
+	@Stored(key: "foundDevices", store: UserDefaults.group) public static var foundDevices: [RokuDevice]
 }

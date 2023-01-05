@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zjQ-ko-9dF">
-    <device id="watch40" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="21507" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zjQ-ko-9dF">
+    <device id="watch44"/>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="21501"/>
     </dependencies>
     <scenes>
         <!--Remoku-->
@@ -14,98 +11,107 @@
             <objects>
                 <controller identifier="MainRemote" title="Remoku" fullBounds="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Roku_Remote_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button alignment="center" enabled="NO" id="TKi-8U-1rc">
-                            <group key="contentGroup" width="1" height="0.29999999999999999" alignment="left" id="Zjl-iZ-Kfy">
-                                <items>
-                                    <label alignment="center" verticalAlignment="center" text="---" textAlignment="center" id="otI-fr-Tzi" userLabel="Current Input asdf asdf asdf asdf asdf">
-                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
-                                    </label>
-                                </items>
-                            </group>
-                            <connections>
-                                <action selector="appButtonPressed" destination="AgC-eL-Hgc" id="c7V-Ma-oBF"/>
-                            </connections>
-                        </button>
-                        <group width="0.94999999999999996" height="0.37" alignment="center" verticalAlignment="center" id="96n-1V-0DU">
+                        <group width="1" height="1" alignment="left" layout="vertical" radius="0.0" id="FYt-Ye-7nc">
                             <items>
-                                <button alignment="left" verticalAlignment="center" id="3nN-KW-zDf">
-                                    <group key="contentGroup" width="0.32500000000000001" alignment="left" id="vq8-GC-jGZ">
-                                        <items>
-                                            <imageView width="0.59999999999999998" height="1" alignment="left" verticalAlignment="center" image="skip-backward" contentMode="scaleAspectFit" id="ddc-I4-iAY">
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </imageView>
-                                        </items>
-                                    </group>
-                                    <connections>
-                                        <action selector="rewindButtonPressed" destination="AgC-eL-Hgc" id="Obw-8Y-Vgc"/>
-                                    </connections>
-                                </button>
-                                <button alignment="center" verticalAlignment="center" id="bgc-3N-0Xt">
-                                    <group key="contentGroup" width="0.34999999999999998" alignment="left" id="vnX-XN-ZFY">
-                                        <items>
-                                            <imageView width="1" height="1" heightAdjustment="1" alignment="center" verticalAlignment="center" image="playpause" contentMode="scaleAspectFit" id="2Gp-Rz-h3m">
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </imageView>
-                                        </items>
-                                    </group>
-                                    <connections>
-                                        <action selector="playButtonPressed" destination="AgC-eL-Hgc" id="y9H-f8-hzU"/>
-                                    </connections>
-                                </button>
-                                <button alignment="right" verticalAlignment="center" id="hbI-OD-3rt">
-                                    <group key="contentGroup" width="0.32500000000000001" alignment="left" id="yFb-iL-Ktc">
-                                        <items>
-                                            <imageView width="0.59999999999999998" height="1" alignment="right" verticalAlignment="center" image="skip-forward" contentMode="scaleAspectFit" id="Xui-GI-MYS">
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </imageView>
-                                        </items>
-                                    </group>
-                                    <connections>
-                                        <action selector="fastForwardButtonPressed" destination="AgC-eL-Hgc" id="3Se-0Z-03y"/>
-                                    </connections>
-                                </button>
+                                <group width="1" height="1" alignment="left" layout="vertical" id="h3m-fR-xMg">
+                                    <items>
+                                        <group width="1" height="0.29999999999999999" alignment="center" id="THL-VT-Uq7">
+                                            <items>
+                                                <label alignment="center" verticalAlignment="center" text="---" textAlignment="center" id="otI-fr-Tzi" userLabel="Current Input asdf asdf asdf asdf asdf">
+                                                    <color key="textColor" systemColor="lightTextColor"/>
+                                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="0.94999999999999996" height="0.37" alignment="center" verticalAlignment="center" id="96n-1V-0DU">
+                                            <items>
+                                                <button alignment="left" verticalAlignment="center" id="3nN-KW-zDf">
+                                                    <group key="contentGroup" width="0.22" alignment="left" id="vq8-GC-jGZ">
+                                                        <items>
+                                                            <imageView width="1" alignment="left" verticalAlignment="center" image="skip-backward" contentMode="scaleAspectFit" id="ddc-I4-iAY">
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </imageView>
+                                                        </items>
+                                                    </group>
+                                                    <connections>
+                                                        <action selector="rewindButtonPressed" destination="AgC-eL-Hgc" id="Obw-8Y-Vgc"/>
+                                                    </connections>
+                                                </button>
+                                                <button alignment="center" verticalAlignment="center" id="bgc-3N-0Xt">
+                                                    <group key="contentGroup" width="0.38" alignment="left" id="vnX-XN-ZFY">
+                                                        <items>
+                                                            <imageView width="1" alignment="center" verticalAlignment="center" image="playpause" contentMode="scaleAspectFit" id="2Gp-Rz-h3m">
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </imageView>
+                                                        </items>
+                                                    </group>
+                                                    <connections>
+                                                        <action selector="playButtonPressed" destination="AgC-eL-Hgc" id="y9H-f8-hzU"/>
+                                                    </connections>
+                                                </button>
+                                                <button alignment="right" verticalAlignment="center" id="hbI-OD-3rt">
+                                                    <group key="contentGroup" width="0.22" alignment="left" id="yFb-iL-Ktc">
+                                                        <items>
+                                                            <imageView width="1" alignment="right" verticalAlignment="center" image="skip-forward" contentMode="scaleAspectFit" id="Xui-GI-MYS">
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </imageView>
+                                                        </items>
+                                                    </group>
+                                                    <connections>
+                                                        <action selector="fastForwardButtonPressed" destination="AgC-eL-Hgc" id="3Se-0Z-03y"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="0.94999999999999996" height="0.25" alignment="center" verticalAlignment="bottom" id="FU9-iT-nSx">
+                                            <items>
+                                                <group width="1" alignment="center" verticalAlignment="bottom" id="7KV-by-Knh">
+                                                    <items>
+                                                        <button alignment="left" verticalAlignment="center" id="fYa-X1-0Hp">
+                                                            <group key="contentGroup" width="0.29999999999999999" alignment="left" id="E7B-5U-GWK">
+                                                                <items>
+                                                                    <imageView height="0.75" alignment="center" verticalAlignment="center" image="instantreplay" contentMode="scaleAspectFit" id="Ss1-Za-uac">
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </imageView>
+                                                                </items>
+                                                            </group>
+                                                            <connections>
+                                                                <action selector="instantReplayButtonPressed" destination="AgC-eL-Hgc" id="8aK-av-9r4"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button alignment="center" verticalAlignment="center" id="1S8-HO-Ohz">
+                                                            <group key="contentGroup" width="0.40000000000000002" alignment="left" id="pHB-wB-Ubz">
+                                                                <items>
+                                                                    <imageView height="0.69999999999999996" alignment="center" verticalAlignment="center" image="List" contentMode="scaleAspectFit" id="0gZ-KI-kAB">
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </imageView>
+                                                                </items>
+                                                            </group>
+                                                            <connections>
+                                                                <segue destination="A8v-dl-7SN" kind="modal" id="z3b-Jx-GeR"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button alignment="right" verticalAlignment="center" id="UrV-5Z-IK4">
+                                                            <group key="contentGroup" width="0.29999999999999999" alignment="left" id="cTG-gN-jGU">
+                                                                <items>
+                                                                    <imageView height="0.75" alignment="center" verticalAlignment="center" image="hand_cursor" contentMode="scaleAspectFit" id="eRs-ZO-cv0">
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </imageView>
+                                                                </items>
+                                                            </group>
+                                                            <connections>
+                                                                <action selector="remoteButtonPressed" destination="AgC-eL-Hgc" id="ZLj-FM-2DK"/>
+                                                            </connections>
+                                                        </button>
+                                                    </items>
+                                                </group>
+                                            </items>
+                                        </group>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
                             </items>
-                        </group>
-                        <group width="0.94999999999999996" height="0.25" alignment="center" verticalAlignment="bottom" id="FU9-iT-nSx">
-                            <items>
-                                <button alignment="left" verticalAlignment="bottom" id="fYa-X1-0Hp">
-                                    <group key="contentGroup" width="0.29999999999999999" alignment="left" id="E7B-5U-GWK">
-                                        <items>
-                                            <imageView height="0.80000000000000004" alignment="center" verticalAlignment="center" image="instantreplay" contentMode="scaleAspectFit" id="Ss1-Za-uac">
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </imageView>
-                                        </items>
-                                    </group>
-                                    <connections>
-                                        <action selector="instantReplayButtonPressed" destination="AgC-eL-Hgc" id="8aK-av-9r4"/>
-                                    </connections>
-                                </button>
-                                <button alignment="center" verticalAlignment="bottom" id="1S8-HO-Ohz">
-                                    <group key="contentGroup" width="0.40000000000000002" alignment="left" id="pHB-wB-Ubz">
-                                        <items>
-                                            <imageView height="0.80000000000000004" alignment="center" verticalAlignment="center" image="hand_cursor" contentMode="scaleAspectFit" id="0gZ-KI-kAB">
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </imageView>
-                                        </items>
-                                    </group>
-                                    <connections>
-                                        <action selector="remoteButtonPressed" destination="AgC-eL-Hgc" id="ynw-5M-bQk"/>
-                                    </connections>
-                                </button>
-                                <button alignment="right" verticalAlignment="bottom" id="UrV-5Z-IK4">
-                                    <group key="contentGroup" width="0.29999999999999999" alignment="left" id="cTG-gN-jGU">
-                                        <items>
-                                            <imageView height="0.80000000000000004" alignment="center" verticalAlignment="center" image="mic" contentMode="scaleAspectFit" id="eRs-ZO-cv0">
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </imageView>
-                                        </items>
-                                    </group>
-                                    <connections>
-                                        <action selector="micButtonPressed" destination="AgC-eL-Hgc" id="JOq-sN-cde"/>
-                                    </connections>
-                                </button>
-                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                         </group>
                     </items>
                     <menu key="menu" id="Zvw-d0-W1p">
@@ -123,27 +129,54 @@
                         </items>
                     </menu>
                     <connections>
-                        <outlet property="currentAppButton" destination="TKi-8U-1rc" id="xFj-rE-Lhn"/>
-                        <outlet property="currentAppLabel" destination="otI-fr-Tzi" id="JgE-wh-7n2"/>
+                        <outlet property="currentAppLabel" destination="otI-fr-Tzi" id="m98-wa-iod"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="75" y="26"/>
         </scene>
-        <!--Apps-->
+        <!--Done-->
         <scene sceneID="UGf-XV-RP2">
             <objects>
-                <controller identifier="AppChooser" title="Apps" alwaysBounce="YES" id="A8v-dl-7SN" customClass="AppChooserInterfaceController" customModule="Roku_Remote_WatchKit_App" customModuleProvider="target">
+                <controller identifier="AppChooser" title="Done" alwaysBounce="YES" id="A8v-dl-7SN" customClass="AppChooserInterfaceController" customModule="Roku_Remote_WatchKit_App" customModuleProvider="target">
                     <items>
+                        <group width="1" alignment="left" layout="vertical" id="DvS-Qp-dL3">
+                            <items>
+                                <button alignment="center" id="Dm6-NT-jVt">
+                                    <group key="contentGroup" width="1" alignment="left" id="wFE-TS-EJx">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Remote" id="aUq-Lv-glH"/>
+                                            <imageView alignment="right" verticalAlignment="center" image="hand_cursor" id="efJ-mf-Rsn">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                        </items>
+                                        <color key="backgroundColor" red="0.13334432239999999" green="0.13328546290000001" blue="0.1372559965" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <edgeInsets key="margins" left="12" right="6" top="6" bottom="6"/>
+                                    </group>
+                                </button>
+                                <separator alignment="center" verticalAlignment="bottom" id="IBT-2P-N27">
+                                    <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </separator>
+                            </items>
+                        </group>
                         <table alignment="left" id="G7E-g4-uid">
                             <items>
                                 <tableRow identifier="RowController" id="Tab-z3-UR2" customClass="RowController" customModule="Roku_Remote_WatchKit_Extension">
-                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="8" id="4FM-Fi-Lwf">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="12" id="4FM-Fi-Lwf">
                                         <items>
-                                            <imageView width="0.29999999999999999" height="32" alignment="left" verticalAlignment="center" contentMode="scaleAspectFit" id="Rnq-c3-KNT"/>
-                                            <label alignment="left" verticalAlignment="center" text="Label" textAlignment="left" numberOfLines="0" id="aof-rD-uFG"/>
+                                            <group width="0.29999999999999999" alignment="left" verticalAlignment="center" radius="6" id="j2t-0u-2EV">
+                                                <items>
+                                                    <imageView width="1" alignment="center" verticalAlignment="center" image="icon" contentMode="scaleAspectFit" id="Rnq-c3-KNT"/>
+                                                </items>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <label alignment="left" verticalAlignment="center" textAlignment="left" numberOfLines="2" id="aof-rD-uFG">
+                                                <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                            </label>
                                         </items>
-                                        <edgeInsets key="margins" left="8" right="8" top="8" bottom="8"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="4"/>
                                     </group>
                                     <connections>
                                         <outlet property="image" destination="Rnq-c3-KNT" id="1r8-RO-qyl"/>
@@ -151,14 +184,19 @@
                                     </connections>
                                 </tableRow>
                                 <tableRow identifier="CompactRowController" selectable="NO" id="zVT-tn-hZZ" customClass="CompactRowController" customModule="Roku_Remote_WatchKit_Extension">
-                                    <group key="rootItem" width="1" height="44" alignment="left" id="W7l-9p-0oA">
+                                    <group key="rootItem" width="1" height="43.25" alignment="left" id="W7l-9p-0oA">
                                         <items>
                                             <button alignment="left" verticalAlignment="center" id="Bfd-U3-VcU">
-                                                <group key="contentGroup" width="0.48999999999999999" height="1" alignment="left" contentMode="scaleAspectFit" layout="vertical" radius="0.0" id="Arg-mv-Odm">
+                                                <group key="contentGroup" width="0.48999999999999999" height="1" alignment="left" contentMode="scaleAspectFit" layout="vertical" id="Arg-mv-Odm">
                                                     <items>
-                                                        <label alignment="center" verticalAlignment="bottom" hidden="YES" text="Switch/PS4/PS3" textAlignment="center" id="4e1-pM-Tak">
-                                                            <fontDescription key="font" type="system" pointSize="11"/>
-                                                        </label>
+                                                        <group width="1" alignment="center" verticalAlignment="bottom" hidden="YES" layout="vertical" id="e3h-rC-sMo">
+                                                            <items>
+                                                                <label width="1" widthAdjustment="-3" alignment="center" verticalAlignment="bottom" text="Switch/PS4/PS3" textAlignment="center" id="4e1-pM-Tak">
+                                                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                                                </label>
+                                                            </items>
+                                                            <color key="backgroundColor" white="1" alpha="0.09765625" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </group>
                                                     </items>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
@@ -168,11 +206,16 @@
                                                 </connections>
                                             </button>
                                             <button alignment="right" verticalAlignment="center" id="7rw-7O-q6H">
-                                                <group key="contentGroup" width="0.48999999999999999" height="1" alignment="left" contentMode="scaleAspectFit" layout="vertical" radius="0.0" id="k9H-aL-LEk">
+                                                <group key="contentGroup" width="0.48999999999999999" height="1" alignment="left" contentMode="scaleAspectFit" layout="vertical" id="k9H-aL-LEk">
                                                     <items>
-                                                        <label alignment="center" verticalAlignment="bottom" hidden="YES" text="Switch/PS4/PS3" textAlignment="center" id="Kso-NA-fUb">
-                                                            <fontDescription key="font" type="system" pointSize="11"/>
-                                                        </label>
+                                                        <group width="1" alignment="center" verticalAlignment="bottom" hidden="YES" layout="vertical" id="bsK-4T-C8m">
+                                                            <items>
+                                                                <label width="1" widthAdjustment="-3" alignment="center" verticalAlignment="bottom" text="Switch/PS4/PS3" textAlignment="center" id="BwY-Tr-fsp">
+                                                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                                                </label>
+                                                            </items>
+                                                            <color key="backgroundColor" white="1" alpha="0.09765625" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </group>
                                                     </items>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
@@ -184,16 +227,18 @@
                                         </items>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
-                                        <variation key="device=watch38mm" height="50"/>
-                                        <variation key="device=watch40mm" height="60"/>
-                                        <variation key="device=watch42mm" height="58"/>
-                                        <variation key="device=watch44mm" height="68"/>
+                                        <variation key="device=watch38mm" height="49"/>
+                                        <variation key="device=watch40mm" height="58"/>
+                                        <variation key="device=watch42mm" height="56"/>
+                                        <variation key="device=watch44mm" height="66"/>
                                     </group>
                                     <connections>
                                         <outlet property="group0" destination="Arg-mv-Odm" id="Pju-xk-avh"/>
                                         <outlet property="group1" destination="k9H-aL-LEk" id="rdi-H3-4SO"/>
                                         <outlet property="label0" destination="4e1-pM-Tak" id="pES-tg-k1N"/>
-                                        <outlet property="label1" destination="Kso-NA-fUb" id="Lbl-ZJ-lkg"/>
+                                        <outlet property="label0Group" destination="e3h-rC-sMo" id="ZaX-hE-PgS"/>
+                                        <outlet property="label1" destination="BwY-Tr-fsp" id="kep-4G-uro"/>
+                                        <outlet property="label1Group" destination="bsK-4T-C8m" id="okT-Hx-AB6"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -201,24 +246,34 @@
                     </items>
                     <menu key="menu" id="WS2-Pb-HCA">
                         <items>
-                            <menuItem title="Change View" icon="more" id="AaQ-pq-euK">
+                            <menuItem title="Grid View" image="grid" id="AaQ-pq-euK">
                                 <connections>
-                                    <action selector="changeViewButtonPressed" destination="A8v-dl-7SN" id="24F-bm-GhJ"/>
+                                    <action selector="gridViewButtonPressed" destination="A8v-dl-7SN" id="24F-bm-GhJ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="List View" image="List" id="4WB-z8-bVY">
+                                <connections>
+                                    <action selector="listViewButtonPressed" destination="A8v-dl-7SN" id="LBs-L1-ng7"/>
                                 </connections>
                             </menuItem>
                         </items>
                     </menu>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="DvS-Qp-dL3"/>
+                        </mask>
+                    </variation>
                     <connections>
                         <outlet property="appsTable" destination="G7E-g4-uid" id="jJk-c9-gmw"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="537" y="26"/>
+            <point key="canvasLocation" x="307" y="26"/>
         </scene>
         <!--Done-->
         <scene sceneID="bvK-oe-ZD4">
             <objects>
-                <controller identifier="Remote" title="Done" fullBounds="YES" id="CND-RL-M3I" customClass="RemoteInterfaceController" customModule="Roku_Remote_WatchKit_Extension">
+                <controller identifier="Remote" title="Done" spacing="0.0" fullBounds="YES" id="CND-RL-M3I" customClass="RemoteInterfaceController" customModule="Roku_Remote_WatchKit_Extension">
                     <items>
                         <group width="0.94999999999999996" height="0.25" alignment="center" id="1ab-rN-Um9">
                             <items>
@@ -260,28 +315,38 @@
                                 </button>
                             </items>
                         </group>
-                        <group width="1" height="0.75" alignment="center" verticalAlignment="bottom" layout="overlap" id="AeR-3b-NT5">
+                        <group width="1" height="0.75" alignment="left" layout="vertical" id="w9Z-dg-y5W">
                             <items>
-                                <group width="0.80000000000000004" height="0.5" alignment="center" verticalAlignment="center" alpha="0.14999999999999999" id="RNW-7O-kZZ">
-                                    <items>
-                                        <label alignment="left" verticalAlignment="center" text="←" id="E2P-mj-T7U">
-                                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
-                                        </label>
-                                        <label alignment="right" verticalAlignment="center" text="→" id="VG5-oi-XYi">
-                                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
-                                        </label>
-                                    </items>
-                                </group>
-                                <group width="0.5" height="0.80000000000000004" alignment="center" verticalAlignment="center" alpha="0.14999999999999999" layout="vertical" id="gmb-Jj-Uxt">
-                                    <items>
-                                        <label alignment="center" text="↑" id="8yJ-fi-9Tz">
-                                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
-                                        </label>
-                                        <label alignment="center" verticalAlignment="bottom" text="↓" id="oWI-P6-f2q">
-                                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
-                                        </label>
-                                    </items>
-                                </group>
+                                <button alignment="center" verticalAlignment="bottom" id="gKh-C6-AvN">
+                                    <group key="contentGroup" width="1" height="1" alignment="left" layout="overlap" id="3uQ-44-kuV">
+                                        <items>
+                                            <group width="0.80000000000000004" height="0.5" alignment="center" verticalAlignment="center" alpha="0.14999999999999999" id="RNW-7O-kZZ">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="←" id="E2P-mj-T7U">
+                                                        <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                                    </label>
+                                                    <label alignment="right" verticalAlignment="center" text="→" id="VG5-oi-XYi">
+                                                        <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <group width="0.5" height="0.80000000000000004" alignment="center" verticalAlignment="center" alpha="0.14999999999999999" layout="vertical" id="gmb-Jj-Uxt">
+                                                <items>
+                                                    <label alignment="center" text="↑" id="8yJ-fi-9Tz">
+                                                        <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                                    </label>
+                                                    <label alignment="center" verticalAlignment="bottom" text="↓" id="oWI-P6-f2q">
+                                                        <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" red="0.13334432239999999" green="0.13328546290000001" blue="0.1372559965" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="tapGestureRecognized:" destination="CND-RL-M3I" id="R0l-aZ-0IK"/>
+                                    </connections>
+                                </button>
                             </items>
                             <gestureRecognizers>
                                 <swipeGestureRecognizer direction="4" id="ZNM-uI-Pbk">
@@ -304,13 +369,86 @@
                                         <action selector="rightGestureRecognized:" destination="CND-RL-M3I" id="svL-xO-7Ly"/>
                                     </connections>
                                 </swipeGestureRecognizer>
-                                <tapGestureRecognizer id="Iab-3i-Lw2">
-                                    <connections>
-                                        <action selector="tapGestureRecognized:" destination="CND-RL-M3I" id="hX7-vS-lPm"/>
-                                    </connections>
-                                </tapGestureRecognizer>
                             </gestureRecognizers>
-                            <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                        <group width="0.80000000000000004" height="0.75" alignment="center" verticalAlignment="bottom" hidden="YES" layout="overlap" spacing="0.0" id="kI1-OJ-ujO">
+                            <items>
+                                <group width="1" height="0.33333333300000001" alignment="center" verticalAlignment="center" radius="8" spacing="0.0" id="Wo6-ea-uWV">
+                                    <items>
+                                        <button alignment="left" verticalAlignment="center" id="ynv-wk-s1S">
+                                            <group key="contentGroup" width="0.5" height="1" alignment="left" id="Psx-sD-wND">
+                                                <items>
+                                                    <label width="0.59999999999999998" alignment="left" verticalAlignment="center" text="←" textAlignment="center" id="1oJ-W2-wKz"/>
+                                                </items>
+                                                <color key="backgroundColor" red="0.37123030420000003" green="0.1871908307" blue="0.54906922579999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </group>
+                                            <connections>
+                                                <action selector="leftGestureRecognized:" destination="CND-RL-M3I" id="D81-uo-Aa0"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="right" verticalAlignment="center" id="Vsf-bI-SLb">
+                                            <group key="contentGroup" width="0.5" height="1" alignment="left" id="Fzq-0V-eYX">
+                                                <items>
+                                                    <label width="0.59999999999999998" alignment="right" verticalAlignment="center" text="→" textAlignment="center" id="Nmz-O3-WUn"/>
+                                                </items>
+                                                <color key="backgroundColor" red="0.37123030420000003" green="0.1871908307" blue="0.54906922579999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </group>
+                                            <connections>
+                                                <action selector="rightGestureRecognized:" destination="CND-RL-M3I" id="PAh-G1-9wt"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </group>
+                                <group width="0.33333333300000001" height="1" alignment="center" verticalAlignment="center" layout="vertical" radius="8" spacing="0.0" id="Kbo-s2-Ihg">
+                                    <items>
+                                        <button alignment="center" id="2Fp-Oi-dRt">
+                                            <group key="contentGroup" width="1" height="0.5" alignment="left" id="phl-aG-dR7">
+                                                <items>
+                                                    <label height="0.59999999999999998" alignment="center" text="↑" textAlignment="center" id="GRj-J6-qvc"/>
+                                                </items>
+                                                <color key="backgroundColor" red="0.37123030420000003" green="0.1871908307" blue="0.54906922579999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </group>
+                                            <connections>
+                                                <action selector="upGestureRecognized:" destination="CND-RL-M3I" id="j8y-fq-CXC"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="center" verticalAlignment="bottom" id="00a-B7-iO4">
+                                            <group key="contentGroup" width="1" height="0.5" alignment="left" id="dTf-uf-qoT">
+                                                <items>
+                                                    <label height="0.59999999999999998" alignment="center" verticalAlignment="bottom" text="↓" textAlignment="center" id="8YP-Al-Yxt"/>
+                                                </items>
+                                                <color key="backgroundColor" red="0.37123030420000003" green="0.1871908307" blue="0.54906922579999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </group>
+                                            <connections>
+                                                <action selector="downGestureRecognized:" destination="CND-RL-M3I" id="hNB-ao-1zM"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </group>
+                                <group width="0.3333333" height="0.3333333" alignment="center" verticalAlignment="center" layout="overlap" id="XNm-w0-mck">
+                                    <items>
+                                        <button alignment="center" verticalAlignment="center" id="bAo-9c-3Dj">
+                                            <group key="contentGroup" width="1" height="1" alignment="left" layout="vertical" radius="23" id="b4c-am-ICI">
+                                                <items>
+                                                    <label alignment="center" verticalAlignment="center" text="OK" id="lBY-dc-DFO"/>
+                                                </items>
+                                                <color key="backgroundColor" red="0.37123030420000003" green="0.1871908307" blue="0.54906922579999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <variation key="device=watch38mm" radius="18"/>
+                                                <variation key="device=watch40mm" radius="21"/>
+                                                <variation key="device=watch42mm" radius="21"/>
+                                                <variation key="device=watch44mm" radius="23"/>
+                                            </group>
+                                            <connections>
+                                                <action selector="tapGestureRecognized:" destination="CND-RL-M3I" id="feV-ye-Ba2"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <color key="backgroundColor" red="0.37123030420000003" green="0.1871908307" blue="0.54906922579999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </group>
                     </items>
                     <menu key="menu" id="RUb-cT-z6w">
@@ -325,16 +463,20 @@
                                     <action selector="muteButtonPressed" destination="CND-RL-M3I" id="HvF-BE-XBi"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Options" icon="more" id="Ss1-QW-IB8">
+                            <menuItem title="Options" image="medical_ID" id="Ss1-QW-IB8">
                                 <connections>
                                     <action selector="optionsMenuItemPressed" destination="CND-RL-M3I" id="w9Z-yP-F2b"/>
                                 </connections>
                             </menuItem>
                         </items>
                     </menu>
+                    <connections>
+                        <outlet property="buttonsGroup" destination="kI1-OJ-ujO" id="g5z-Lj-Obm"/>
+                        <outlet property="swipeButton" destination="gKh-C6-AvN" id="oVc-99-FMp"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="314" y="-19"/>
+            <point key="canvasLocation" x="565" y="24"/>
         </scene>
         <!--Devices-->
         <scene sceneID="Qb6-6N-zh2">
@@ -344,27 +486,64 @@
                         <table alignment="center" id="cxY-QJ-bXi">
                             <items>
                                 <tableRow identifier="DeviceRow" id="bWb-Ze-Pv6" customClass="DeviceRowController" customModule="Roku_Remote_WatchKit_Extension">
-                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" radius="8" spacing="0.0" id="Ylo-Rl-cHl">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="0.0" id="Ylo-Rl-cHl">
                                         <items>
                                             <label alignment="left" text="Device Name" textAlignment="center" numberOfLines="0" id="qGZ-FR-PaD"/>
-                                            <label alignment="left" text="Model Name" id="QBh-Ym-x21">
-                                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                            <label alignment="left" text="Model Name" numberOfLines="0" id="QBh-Ym-x21">
+                                                <color key="textColor" systemColor="lightTextColor"/>
                                                 <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
                                             </label>
+                                            <label alignment="left" hidden="YES" text="Network Name" id="L11-nk-qy7">
+                                                <color key="textColor" systemColor="lightTextColor"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </label>
                                         </items>
-                                        <edgeInsets key="margins" left="12" right="12" top="8" bottom="8"/>
+                                        <edgeInsets key="margins" left="10" right="10" top="8" bottom="8"/>
                                     </group>
                                     <connections>
                                         <outlet property="label" destination="qGZ-FR-PaD" id="QcG-M4-JEw"/>
                                         <outlet property="modelLabel" destination="QBh-Ym-x21" id="XTP-5v-tem"/>
+                                        <outlet property="networkLabel" destination="L11-nk-qy7" id="Epm-Id-fiy"/>
                                         <segue destination="AgC-eL-Hgc" kind="push" identifier="ShowRemote" id="46L-rU-zV3"/>
                                     </connections>
                                 </tableRow>
                             </items>
                         </table>
+                        <group width="1" alignment="left" spacing="4" id="HyQ-24-fdu">
+                            <items>
+                                <imageView width="14" height="14" alignment="left" verticalAlignment="center" alpha="0.80000000000000004" image="spinner" id="ekT-rI-lIH"/>
+                                <label alignment="left" verticalAlignment="center" text="Searching…" numberOfLines="0" id="CQs-7J-XjY">
+                                    <color key="textColor" systemColor="lightTextColor"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" numberOfLines="0" id="1P4-bx-ToC">
+                            <string key="text">No devices found.
+
+Make sure your iPhone and your Roku are connected to the same network.</string>
+                            <color key="textColor" systemColor="lightTextColor"/>
+                        </label>
+                        <button width="1" alignment="left" hidden="YES" title="Search Again" id="o8R-Yz-dzA">
+                            <connections>
+                                <action selector="searchForDevices" destination="zjQ-ko-9dF" id="WW7-xW-fVK"/>
+                            </connections>
+                        </button>
                     </items>
+                    <menu key="menu" id="8VI-Bh-ayg">
+                        <items>
+                            <menuItem title="Search" icon="resume" id="bhv-Ur-zVS">
+                                <connections>
+                                    <action selector="searchForDevices" destination="zjQ-ko-9dF" id="VzS-CX-zrq"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="devicesTable" destination="cxY-QJ-bXi" id="npI-hn-y87"/>
+                        <outlet property="noDevicesLabel" destination="1P4-bx-ToC" id="rC3-YV-07h"/>
+                        <outlet property="searchAgainButton" destination="o8R-Yz-dzA" id="2yl-L7-lz6"/>
+                        <outlet property="searchingLabel" destination="CQs-7J-XjY" id="xSF-iU-QYR"/>
+                        <outlet property="spinnerGroup" destination="HyQ-24-fdu" id="Nbg-iZ-umT"/>
                     </connections>
                 </controller>
             </objects>
@@ -372,4 +551,23 @@
         </scene>
     </scenes>
     <color key="tintColor" red="0.67355371900826444" green="0.34710743801652888" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+    <resources>
+        <image name="List" width="44" height="28"/>
+        <image name="Power" width="30" height="34"/>
+        <image name="back" width="384" height="384"/>
+        <image name="grid" width="30" height="25"/>
+        <image name="hand_cursor" width="30" height="30"/>
+        <image name="home" width="50" height="50"/>
+        <image name="icon" width="290" height="218"/>
+        <image name="instantreplay" width="87" height="77"/>
+        <image name="medical_ID" width="30" height="30"/>
+        <image name="mic" width="333" height="518"/>
+        <image name="playpause" width="71" height="71"/>
+        <image name="skip-backward" width="71" height="71"/>
+        <image name="skip-forward" width="71" height="71"/>
+        <image name="spinner" width="16" height="16"/>
+        <systemColor name="lightTextColor">
+            <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
